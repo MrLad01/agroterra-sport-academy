@@ -6,6 +6,9 @@ import { motion, AnimatePresence, Variants } from 'framer-motion'
 // import Navbar from './components/Navbar'
 // import { SidebarComponent } from './components/Sidebar'
 import bgImage from '@/public/Slider-Lagos-Tigers-Basketball-Launch-2024-.jpg'
+import bgImage2 from '@/public/DAY2L (305).jpg'
+import bgImage3 from '@/public/DAY2L (307).jpg'
+import bgImage4 from '@/public/DAY2L (311).jpg'
 import adImage from '@/public/LTFC-2025-Summer-Camp-1.jpg'
 import { useState, useEffect, useRef } from 'react'
 import { FaArrowLeft, FaArrowRight, FaPlay, FaRunning, FaStar, FaDumbbell, FaSwimmer, FaFire, FaClock, FaUsers, FaChevronRight } from 'react-icons/fa'
@@ -26,9 +29,9 @@ export default function Home() {
   // const opacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0.4, 1, 1, 0.4])
 
   const slides = [
-    { src: bgImage, alt: 'Agroterra Sport Academy Event 1', title: 'Unleash Your Potential', subtitle: 'Join our world-class sports academy today!' },
-    { src: bgImage, alt: 'Agroterra Sport Academy Event 2', title: 'Train Like a Champion', subtitle: 'Elite coaching for all skill levels.' },
-    { src: bgImage, alt: 'Agroterra Sport Academy Event 3', title: 'Discover Excellence', subtitle: 'State-of-the-art facilities await you.' },
+    { src: bgImage2, alt: 'Agroterra Sport Academy Event 1', title: 'Unleash Your Potential', subtitle: 'Join our world-class sports academy today!' },
+    { src: bgImage3, alt: 'Agroterra Sport Academy Event 2', title: 'Train Like a Champion', subtitle: 'Elite coaching for all skill levels.' },
+    { src: bgImage4, alt: 'Agroterra Sport Academy Event 3', title: 'Discover Excellence', subtitle: 'State-of-the-art facilities await you.' },
   ]
 
   useEffect(() => {
@@ -114,7 +117,7 @@ export default function Home() {
       title: 'Elite Performance Academy',
       subtitle: 'Professional Athlete Development Program',
       desc: 'Transform into a world-class athlete with our comprehensive elite training program. Featuring Olympic-level coaching, personalized nutrition plans, and cutting-edge sports science.',
-      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'%3E%3Cdefs%3E%3ClinearGradient id='elite' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2310b981;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23047857;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23064e3b;stop-opacity:1' /%3E%3C/linearGradient%3E%3CradialGradient id='glow' cx='50%25' cy='50%25' r='50%25'%3E%3Cstop offset='0%25' style='stop-color:%234ade80;stop-opacity:0.8' /%3E%3Cstop offset='100%25' style='stop-color:%2310b981;stop-opacity:0.2' /%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='800' height='400' fill='url(%23elite)'/%3E%3Ccircle cx='400' cy='200' r='100' fill='url(%23glow)'/%3E%3Ctext x='400' y='180' font-family='Arial, sans-serif' font-size='32' font-weight='bold' fill='white' text-anchor='middle'%3E🏆%3C/text%3E%3Ctext x='400' y='220' font-family='Arial, sans-serif' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EELITE PERFORMANCE%3C/text%3E%3C/svg%3E",
+      image: bgImage,
       badge: 'PROFESSIONAL',
       duration: '12 Months',
       level: 'Advanced',
@@ -129,7 +132,7 @@ export default function Home() {
       title: 'Youth Champion Development',
       subtitle: 'Future Stars Training Program',
       desc: 'Nurture young talent with our comprehensive youth development program. Age-appropriate training, character building, and fun-focused learning environment for tomorrow\'s champions.',
-      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'%3E%3Cdefs%3E%3ClinearGradient id='youth' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2310b981;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23047857;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23064e3b;stop-opacity:1' /%3E%3C/linearGradient%3E%3CradialGradient id='youthGlow' cx='50%25' cy='50%25' r='50%25'%3E%3Cstop offset='0%25' style='stop-color:%234ade80;stop-opacity:0.8' /%3E%3Cstop offset='100%25' style='stop-color:%2310b981;stop-opacity:0.2' /%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='800' height='400' fill='url(%23youth)'/%3E%3Ccircle cx='400' cy='200' r='100' fill='url(%23youthGlow)'/%3E%3Ctext x='400' y='180' font-family='Arial, sans-serif' font-size='32' font-weight='bold' fill='white' text-anchor='middle'%3E🌟%3C/text%3E%3Ctext x='400' y='220' font-family='Arial, sans-serif' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EYOUTH DEVELOPMENT%3C/text%3E%3C/svg%3E",
+      image: bgImage,
       badge: 'AGES 8-16',
       duration: '6 Months',
       level: 'Beginner to Intermediate',
@@ -144,7 +147,7 @@ export default function Home() {
       title: 'Ultimate Fitness Transformation',
       subtitle: 'Complete Athletic Conditioning',
       desc: 'Revolutionary fitness program combining strength training, endurance building, and athletic conditioning. Transform your body and performance with our science-backed approach.',
-      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'%3E%3Cdefs%3E%3ClinearGradient id='fitness' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2310b981;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23047857;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23064e3b;stop-opacity:1' /%3E%3C/linearGradient%3E%3CradialGradient id='fitnessGlow' cx='50%25' cy='50%25' r='50%25'%3E%3Cstop offset='0%25' style='stop-color:%234ade80;stop-opacity:0.8' /%3E%3Cstop offset='100%25' style='stop-color:%2310b981;stop-opacity:0.2' /%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='800' height='400' fill='url(%23fitness)'/%3E%3Ccircle cx='400' cy='200' r='100' fill='url(%23fitnessGlow)'/%3E%3Ctext x='400' y='180' font-family='Arial, sans-serif' font-size='32' font-weight='bold' fill='white' text-anchor='middle'%3E💪%3C/text%3E%3Ctext x='400' y='220' font-family='Arial, sans-serif' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EFITNESS TRANSFORMATION%3C/text%3E%3C/svg%3E",
+      image: bgImage,
       badge: 'ALL LEVELS',
       duration: '3 Months',
       level: 'All Levels',
@@ -160,7 +163,7 @@ export default function Home() {
     {
       title: 'Olympic Aquatic Center',
       desc: 'World-class 50m Olympic pool with advanced filtration, underwater cameras, and temperature control systems.',
-      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1000' height='600' viewBox='0 0 1000 600'%3E%3Cdefs%3E%3ClinearGradient id='pool' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2310b981;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23047857;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23064e3b;stop-opacity:1' /%3E%3C/linearGradient%3E%3CradialGradient id='poolGlow' cx='50%25' cy='30%25' r='60%25'%3E%3Cstop offset='0%25' style='stop-color:%234ade80;stop-opacity:0.8' /%3E%3Cstop offset='100%25' style='stop-color:%2310b981;stop-opacity:0.3' /%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='1000' height='600' fill='url(%23pool)'/%3E%3Cellipse cx='500' cy='150' rx='400' ry='100' fill='url(%23poolGlow)'/%3E%3Crect x='150' y='200' width='700' height='300' rx='20' fill='%23064e3b' opacity='0.9'/%3E%3Ctext x='500' y='300' font-family='Arial, sans-serif' font-size='48' font-weight='bold' fill='white' text-anchor='middle'%3E🏊‍♂️%3C/text%3E%3Ctext x='500' y='350' font-family='Arial, sans-serif' font-size='24' font-weight='bold' fill='white' text-anchor='middle'%3EOLYMPIC AQUATIC CENTER%3C/text%3E%3Ctext x='500' y='380' font-family='Arial, sans-serif' font-size='16' fill='%234ade80' text-anchor='middle'%3E50M • 8 LANES • HEATED%3C/text%3E%3C/svg%3E",
+      image: bgImage,
       category: 'AQUATIC',
       icon: <FaSwimmer />,
       stats: { capacity: '500 swimmers', depth: '2-4 meters', lanes: '8 Olympic lanes' },
@@ -169,7 +172,7 @@ export default function Home() {
     {
       title: 'Elite Performance Gym',
       desc: 'State-of-the-art fitness center with premium equipment, specialized training zones, and recovery facilities.',
-      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1000' height='600' viewBox='0 0 1000 600'%3E%3Cdefs%3E%3ClinearGradient id='gym' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2310b981;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23047857;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23064e3b;stop-opacity:1' /%3E%3C/linearGradient%3E%3CradialGradient id='gymGlow' cx='50%25' cy='30%25' r='60%25'%3E%3Cstop offset='0%25' style='stop-color:%234ade80;stop-opacity:0.8' /%3E%3Cstop offset='100%25' style='stop-color:%2310b981;stop-opacity:0.3' /%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='1000' height='600' fill='url(%23gym)'/%3E%3Cellipse cx='500' cy='150' rx='400' ry='100' fill='url(%23gymGlow)'/%3E%3Crect x='150' y='200' width='700' height='300' rx='20' fill='%23064e3b' opacity='0.9'/%3E%3Ctext x='500' y='300' font-family='Arial, sans-serif' font-size='48' font-weight='bold' fill='white' text-anchor='middle'%3E🏋️‍♂️%3C/text%3E%3Ctext x='500' y='350' font-family='Arial, sans-serif' font-size='24' font-weight='bold' fill='white' text-anchor='middle'%3EELITE PERFORMANCE GYM%3C/text%3E%3Ctext x='500' y='380' font-family='Arial, sans-serif' font-size='16' fill='%234ade80' text-anchor='middle'%3E24/7 ACCESS • PREMIUM EQUIPMENT%3C/text%3E%3C/svg%3E",
+      image: bgImage,
       category: 'FITNESS',
       icon: <FaDumbbell />,
       stats: { equipment: '200+ machines', area: '5000 sq ft', access: '24/7 access' },
@@ -178,7 +181,7 @@ export default function Home() {
     {
       title: 'Championship Sports Arena',
       desc: 'Multi-purpose indoor arena with professional courts for basketball, volleyball, badminton, and more.',
-      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1000' height='600' viewBox='0 0 1000 600'%3E%3Cdefs%3E%3ClinearGradient id='arena' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2310b981;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23047857;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23064e3b;stop-opacity:1' /%3E%3C/linearGradient%3E%3CradialGradient id='arenaGlow' cx='50%25' cy='30%25' r='60%25'%3E%3Cstop offset='0%25' style='stop-color:%234ade80;stop-opacity:0.8' /%3E%3Cstop offset='100%25' style='stop-color:%2310b981;stop-opacity:0.3' /%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='1000' height='600' fill='url(%23arena)'/%3E%3Cellipse cx='500' cy='150' rx='400' ry='100' fill='url(%23arenaGlow)'/%3E%3Crect x='150' y='200' width='700' height='300' rx='20' fill='%23064e3b' opacity='0.9'/%3E%3Ctext x='500' y='300' font-family='Arial, sans-serif' font-size='48' font-weight='bold' fill='white' text-anchor='middle'%3E⛹️‍♂️%3C/text%3E%3Ctext x='500' y='350' font-family='Arial, sans-serif' font-size='24' font-weight='bold' fill='white' text-anchor='middle'%3ECHAMPIONSHIP SPORTS ARENA%3C/text%3E%3Ctext x='500' y='380' font-family='Arial, sans-serif' font-size='16' fill='%234ade80' text-anchor='middle'%3EMULTI-SPORT • PROFESSIONAL COURTS%3C/text%3E%3C/svg%3E",
+      image: bgImage,
       category: 'COURTS',
       icon: <FaRunning />,
       stats: { courts: '6 professional courts', capacity: '2000 spectators', sports: '8 different sports' },
@@ -187,7 +190,7 @@ export default function Home() {
     {
       title: 'Athletic Performance Track',
       desc: 'Regulation 400m track with synthetic surface, field event areas, and professional timing systems.',
-      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1000' height='600' viewBox='0 0 1000 600'%3E%3Cdefs%3E%3ClinearGradient id='track' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2310b981;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23047857;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23064e3b;stop-opacity:1' /%3E%3C/linearGradient%3E%3CradialGradient id='trackGlow' cx='50%25' cy='30%25' r='60%25'%3E%3Cstop offset='0%25' style='stop-color:%234ade80;stop-opacity:0.8' /%3E%3Cstop offset='100%25' style='stop-color:%2310b981;stop-opacity:0.3' /%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='1000' height='600' fill='url(%23track)'/%3E%3Cellipse cx='500' cy='150' rx='400' ry='100' fill='url(%23trackGlow)'/%3E%3Crect x='150' y='200' width='700' height='300' rx='20' fill='%23064e3b' opacity='0.9'/%3E%3Ctext x='500' y='300' font-family='Arial, sans-serif' font-size='48' font-weight='bold' fill='white' text-anchor='middle'%3E🏃‍♂️%3C/text%3E%3Ctext x='500' y='350' font-family='Arial, sans-serif' font-size='24' font-weight='bold' fill='white' text-anchor='middle'%3EATHLETIC PERFORMANCE TRACK%3C/text%3E%3Ctext x='500' y='380' font-family='Arial, sans-serif' font-size='16' fill='%234ade80' text-anchor='middle'%3E400M TRACK • SYNTHETIC SURFACE%3C/text%3E%3C/svg%3E",
+      image: bgImage,
       category: 'TRACK',
       icon: <FaRunning />,
       stats: { distance: '400m regulation', surface: 'Synthetic track', events: '12 field events' },
@@ -196,7 +199,7 @@ export default function Home() {
     {
       title: 'Recovery & Wellness Spa',
       desc: 'Luxury recovery center with ice baths, saunas, massage therapy, and sports medicine facilities.',
-      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1000' height='600' viewBox='0 0 1000 600'%3E%3Cdefs%3E%3ClinearGradient id='wellness' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2310b981;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23047857;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23064e3b;stop-opacity:1' /%3E%3C/linearGradient%3E%3CradialGradient id='wellnessGlow' cx='50%25' cy='30%25' r='60%25'%3E%3Cstop offset='0%25' style='stop-color:%234ade80;stop-opacity:0.8' /%3E%3Cstop offset='100%25' style='stop-color:%2310b981;stop-opacity:0.3' /%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='1000' height='600' fill='url(%23wellness)'/%3E%3Cellipse cx='500' cy='150' rx='400' ry='100' fill='url(%23wellnessGlow)'/%3E%3Crect x='150' y='200' width='700' height='300' rx='20' fill='%23064e3b' opacity='0.9'/%3E%3Ctext x='500' y='300' font-family='Arial, sans-serif' font-size='48' font-weight='bold' fill='white' text-anchor='middle'%3E🧘‍♂️%3C/text%3E%3Ctext x='500' y='350' font-family='Arial, sans-serif' font-size='24' font-weight='bold' fill='white' text-anchor='middle'%3ERECOVERY & WELLNESS SPA%3C/text%3E%3Ctext x='500' y='380' font-family='Arial, sans-serif' font-size='16' fill='%234ade80' text-anchor='middle'%3ERECOVERY • THERAPY • WELLNESS%3C/text%3E%3C/svg%3E",
+      image: bgImage,
       category: 'RECOVERY',
       icon: <FaStar />,
       stats: { services: '12 wellness services', therapists: 'Licensed professionals', hours: 'Extended hours' },
@@ -205,7 +208,7 @@ export default function Home() {
     {
       title: 'Natural Training Fields',
       desc: 'Premium natural grass fields perfect for football, rugby, and outdoor team sports with professional drainage.',
-      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1000' height='600' viewBox='0 0 1000 600'%3E%3Cdefs%3E%3ClinearGradient id='field' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2310b981;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23047857;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23064e3b;stop-opacity:1' /%3E%3C/linearGradient%3E%3CradialGradient id='fieldGlow' cx='50%25' cy='30%25' r='60%25'%3E%3Cstop offset='0%25' style='stop-color:%234ade80;stop-opacity:0.8' /%3E%3Cstop offset='100%25' style='stop-color:%2310b981;stop-opacity:0.3' /%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='1000' height='600' fill='url(%23field)'/%3E%3Cellipse cx='500' cy='150' rx='400' ry='100' fill='url(%23fieldGlow)'/%3E%3Crect x='150' y='200' width='700' height='300' rx='20' fill='%23064e3b' opacity='0.9'/%3E%3Ctext x='500' y='300' font-family='Arial, sans-serif' font-size='48' font-weight='bold' fill='white' text-anchor='middle'%3E⚽%3C/text%3E%3Ctext x='500' y='350' font-family='Arial, sans-serif' font-size='24' font-weight='bold' fill='white' text-anchor='middle'%3ENATURAL TRAINING FIELDS%3C/text%3E%3Ctext x='500' y='380' font-family='Arial, sans-serif' font-size='16' fill='%234ade80' text-anchor='middle'%3ENATURAL GRASS • PROFESSIONAL GRADE%3C/text%3E%3C/svg%3E",
+      image: bgImage,
       category: 'OUTDOOR',
       icon: <FaRunning />,
       stats: { fields: '4 regulation fields', surface: 'Natural grass', drainage: 'Professional system' },
@@ -279,7 +282,7 @@ export default function Home() {
               href="/contact"
               className="inline-block px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 bg-gradient-to-r from-emerald-500 to-green-500 text-white hover:shadow-lg hover:shadow-emerald-500/50"
             >
-              Join Now
+              Get Started
             </Link>
           </motion.div>
         </div>
@@ -378,7 +381,7 @@ export default function Home() {
                         </div>
                       </div>
                       <button className="self-start px-6 py-2 rounded-t-full cursor-pointer font-bold text-sm transition-all duration-300 hover:scale-105 bg-emerald-600 hover:bg-emerald-500 text-white">
-                        REGISTER
+                        VISIT NOW
                       </button>
                     </div>
                     <div className="w-32 relative flex flex-col items-center justify-center">
@@ -429,31 +432,33 @@ export default function Home() {
             </button>
           </div>
           <div className="text-center mt-12">
-            <button className="px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 bg-emerald-500 hover:bg-emerald-400 text-white">
-              View All Events
-            </button>
+            <Link href={`/events`}>
+              <button className="px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 bg-emerald-500 hover:bg-emerald-400 text-white cursor-pointer">
+                View All Events
+              </button>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Ads */}
-      <section className="py-16 px-4 sm:px-6 lg:px-32 flex max-lg:flex-col gap-12 justify-between relative z-10">
-        <div className="flex flex-col w-[42rem] justify-between">
+      <section className="py-16 px-4 sm:px-6 lg:px-32 flex flex-col md:flex-row gap-12 justify-between relative z-10">
+        <div className="flex flex-col w-full md:w-[42rem] justify-between">
           <div className="block space-y-3">
             <h4 className="text-emerald-500">22nd July - 23rd August</h4>
             <h2 className="uppercase text-3xl">5 week intensive summer camp</h2>
             <div className="h-0.5 w-[100px] bg-emerald-500"></div>
           </div>
-          <h3 className="text-xl font-semibold">Think like a pro</h3>
-          <div className="block text-base text-wrap text-[17px]">
-            This summer, give your child the opportunity to train like a pro at the Lagos Tigers Academy Summer Soccer Camp – a fun, structured, and skill-packed experience for boys and girls aged 3 to 15. Whether your child is a beginner or already showing promise, our 5-week camp combines professional football training, life skill development, and matchday excitement – all in a safe, inclusive environment.
+          <h3 className="text-xl font-semibold mt-4">Think like a pro</h3>
+          <div className="block text-base text-wrap text-[17px] mt-2">
+            This summer, give your child the opportunity to train like a pro at the Lagos Tigers Academy Summer Soccer Camp – a fun, structured, and skill-packed experience for boys and girls aged 3 to 15. Whether your child is a beginner or already showing showing promise, our 5-week camp combines professional football training, life skill development, and matchday excitement – all in a safe, inclusive environment.
           </div>
-          <button className="border uppercase py-4 cursor-pointer hover:text-white border-emerald-500 text-emerald-500 hover:bg-emerald-500">
-            Register here
+          <button className="border uppercase py-4 cursor-pointer hover:text-white border-emerald-500 text-emerald-500 hover:bg-emerald-500 mt-4">
+            Contact Us
           </button>
         </div>
-        <div className="relative w-[30rem] h-[26rem]">
-          <Image src={adImage} alt='' fill className="object-cover object-center" quality={90}></Image>
+        <div className="relative w-full md:w-[30rem] h-64 md:h-[26rem]">
+          <Image src={adImage} alt='' fill className="object-cover object-center rounded-lg" quality={90} />
         </div>
       </section>
 

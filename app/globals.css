@@ -76,3 +76,7 @@ body {
     transform: translateY(-8px);
   }
 }
+
+*{
+  outline: none;
+}

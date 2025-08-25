@@ -11,6 +11,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import heroImage from "@/public/Slider-Lagos-Tigers-Basketball-Launch-2024-.jpg"; // Single image for all sections
+import ronkeImage from '@/public/ronke.jpg'
 
 export default function Athletics() {
   const { toggleTheme } = useTheme();
@@ -315,13 +316,13 @@ export default function Athletics() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20': 'bg-white'} `}>
                 <Image
-                  src={heroImage}
-                  alt="Amina Bello"
-                  width={400}
-                  height={300}
+                  src={ronkeImage}
+                  alt="Ronke Akanbi"
+                  width={300}
+                  height={400}
                   className="w-full h-64 object-cover rounded-xl mb-4"
                 />
-                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500' }`}>Amina Bello - 100m Sprint Sensation</h3>
+                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500' }`}>Ronke Akanbi - 3000m Sensation</h3>
                 <p className={`text-base ${ toggleTheme ? 'text-slate-300': 'text-slate-500'} mb-2`}>National Champion 2024 | 11.2s Record</p>
                 <p className={`text-sm ${toggleTheme ? 'text-emerald-100': 'text-emerald-400'} italic`}>
                   &quot;Agroterra gave me the tools to sprint past my fears. At 18, I’m a national champ—your turn is next!&quot;
