@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useTheme } from "../context/ThemeContext";
-import { FaTrophy, FaUsers, FaBullseye, FaFootballBall, FaBasketballBall, FaRunning, FaTableTennis, FaGolfBall, FaVolleyballBall } from "react-icons/fa";
-import demoImage from "@/public/Slider-Lagos-Tigers-Basketball-Launch-2024-.jpg"; // Use your actual hero image
+import { FaTrophy, FaUsers, FaBullseye, FaFootballBall, FaBasketballBall, FaRunning, FaTableTennis, FaGolfBall, FaVolleyballBall, FaUser } from "react-icons/fa";
+import demoImage from "@/public/IMG_20231014_074350.jpg"; // Use your actual hero image
 import founderImage from "@/public/BABA1.jpg";
 import dirImage1 from "@/public/Yomi.jpg"
 import dirImage2 from "@/public/Raji1.jpg"
@@ -23,7 +23,7 @@ export default function About() {
     { name: "Muiz Raji", role: "Director", bio: "With 20+ years in sports management, John founded Agroterra to nurture talent.", image: dirImage2 },
     { name: "Ojuola Oladiran Ayinde", role: "Head Coach (Athletics)", bio: "Track and Field Guru. Specialist in sprints and middle Distance events.", image: headImage },
     { name: "Olalekan Soetan", role: "Master tactician and special consultant", bio: "A wonderful Track and Field coach. Specialist in hurdles and jumps events.", image: techImage },
-    { name: "Babajide Odedeji", role: "Sport Consultant", bio: "Oversees operations for top-tier facilities.", image: demoImage },
+    { name: "Babajide Odedeji", role: "Sport Consultant", bio: "Oversees operations for top-tier facilities." },
   ];
 
   // Animation variants
@@ -67,7 +67,7 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg sm:text-xl mb-8 text-gray-200"
           >
-            Empowering athletes to reach their full potential since 2024.
+            Empowering athletes to reach their full potential since 2021.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -317,13 +317,20 @@ export default function About() {
                 className={`rounded-2xl overflow-hidden shadow-lg border ${toggleTheme ? "bg-slate-900 border-emerald-500/30" : "bg-white border-emerald-200/50"}`}
               >
                 <div className="relative h-48">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    className="object-cover object-center"
-                    quality={80}
-                  />
+                  {
+                    member.image ? 
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill
+                        className="object-cover object-center"
+                        quality={80}
+                      />
+                    :
+                    <div className="w-full h-full flex items-center justify-center opacity-10">
+                      <FaUser size={50} />
+                    </div>
+                  }
                 </div>
                 <div className="p-6 text-center">
                   <h3 className={`text-xl font-bold mb-1 ${toggleTheme ? "text-emerald-100" : "text-emerald-600"}`}>{member.name}</h3>
