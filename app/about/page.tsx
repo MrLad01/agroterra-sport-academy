@@ -12,14 +12,12 @@ export default function About() {
 
   // Team data with expanded coaches
   const teamMembers = [
-    { name: "John Doe", role: "Founder & CEO", bio: "With 20+ years in sports management, John founded Agroterra to nurture talent.", image: demoImage },
-    { name: "Jane Smith", role: "Head Coach (Athletics)", bio: "Olympic medalist shaping future track stars.", image: demoImage },
-    { name: "Mike Johnson", role: "Basketball Coach", bio: "Ex-pro player mentoring youth with strategic expertise.", image: demoImage },
-    { name: "Sarah Lee", role: "Operations Manager", bio: "Oversees operations for top-tier facilities.", image: demoImage },
-    { name: "Tom Brown", role: "Tennis Coach", bio: "Former national player coaching precision and agility.", image: demoImage },
-    { name: "Emma Wilson", role: "Table Tennis Coach", bio: "Specialist in fast-paced techniques and strategy.", image: demoImage },
-    { name: "David Kim", role: "Squash Coach", bio: "Brings international experience to squash training.", image: demoImage },
-    { name: "Laura Adams", role: "Golf Coach", bio: "Expert in golf techniques for aspiring pros.", image: demoImage },
+    { name: "Rasheed Afonja", role: "Founder & CEO", bio: "With 20+ years in sports management, John founded Agroterra to nurture talent.", image: demoImage },
+    { name: "Yomi Lad-Durojaiye", role: "Director", bio: "With 20+ years in sports management, John founded Agroterra to nurture talent.", image: demoImage },
+    { name: "Muiz Raji", role: "Director", bio: "With 20+ years in sports management, John founded Agroterra to nurture talent.", image: demoImage },
+    { name: "Ojuola Oladiran Ayinde", role: "Head Coach (Athletics)", bio: "Track and Field Guru. Specialist in sprints and middle Distance events.", image: demoImage },
+    { name: "Olalekan Soetan", role: "Master tactician and special consultant", bio: "A wonderful Track and Field coach. Specialist in hurdles and jumps events.", image: demoImage },
+    { name: "Babajide Odedeji", role: "Sport Consultant", bio: "Oversees operations for top-tier facilities.", image: demoImage },
   ];
 
   // Animation variants
@@ -99,7 +97,7 @@ export default function About() {
             viewport={{ once: true }}
             className={`text-lg leading-relaxed text-center max-w-4xl mx-auto ${toggleTheme ? "text-slate-300" : "text-slate-600"}`}
           >
-            Agroterra Sport Academy was founded in 2024 in Lagos, Nigeria, by a group of passionate sports enthusiasts led by John Doe, a veteran with over two decades in sports management. Inspired by the lack of accessible, high-quality training facilities for young athletes in Africa, the academy was born out of a vision to bridge this gap and nurture talent across diverse sports. Starting as a modest training center, Agroterra quickly grew into a premier institution, offering programs in football, basketball, athletics, tennis, table tennis, squash, and golf, supported by state-of-the-art facilities and a dedicated team of coaches. The academy operates through a structured system, combining rigorous training schedules, personalized coaching, and holistic development programs that include nutrition, mental conditioning, and life skills. Our next goal is to expand internationally, establishing satellite academies across Africa by 2027, while our immediate steps include hosting the Agroterra Invitational Tournament in 2026 to showcase our athletes. With a commitment to producing national stars and global champions, Agroterra continues to pave the way for the next generation of athletes.
+            Welcome to Agroterra Sports Academy (ASA), established in January 2021, where we are dedicated to nurturing young athletes and transforming them into future sports stars. Situated within the picturesque Agroterra Resort in Joga Orile, Ogun State, Nigeria, ASA provides a conducive environment and top-notch training facilities for athletes to achieve their maximum potential. Inspired by the lack of accessible, high-quality training facilities for young athletes in Africa, the academy was born out of a vision to bridge this gap and nurture talents across diverse sports. Starting as a modest training center, Agroterra is quickly growing into a premier institution, offering programs in football, basketball, athletics, tennis, table tennis, squash, and golf, supported by state-of-the-art facilities and a dedicated team of coaches. The academy operates through a structured system, combining rigorous training schedules, personalized coaching, and holistic development programs that include nutrition, and life skills. With a commitment to producing national stars and global champions, Agroterra continues to pave the way for the next generation of athletes.
           </motion.p>
         </div>
       </section>
@@ -112,14 +110,15 @@ export default function About() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
           >
-            <h2 className="text-3xl font-bold mb-4 text-emerald-500">Our Mission</h2>
+            <h2 className="text-3xl font-bold mb-4 text-emerald-500">Our Vision</h2>
             <p className={`text-lg mb-6 ${toggleTheme ? "text-slate-300" : "text-slate-600"}`}>
-              At Agroterra Sport Academy, our mission is to provide world-class training across football, basketball, athletics, tennis, table tennis, squash, and golf, empowering athletes to excel in sports and life.
+              The vision of Agroterra Sports Academy (ASA) is to unleash the sports talents in young individuals and nurture them into shining stars. We strive to create a platform where aspiring athletes can receive top-tier training, guidance, and support, enabling them to reach their full potential in the world of sports
             </p>
             <div className="flex items-center gap-4 text-emerald-500">
-              <FaBullseye size={24} />
-              <span className="font-semibold">Holistic athlete development</span>
+              <FaTrophy size={24} />
+              <span className="font-semibold">Champions of tomorrow</span>
             </div>
           </motion.div>
           <motion.div
@@ -127,15 +126,14 @@ export default function About() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
           >
-            <h2 className="text-3xl font-bold mb-4 text-emerald-500">Our Vision</h2>
-            <p className={`text-lg mb-6 ${toggleTheme ? "text-slate-300" : "text-slate-600"}`}>
-              To be Africa&apos;s premier sports academy, producing national stars and global champions while fostering sportsmanship and innovation across multiple disciplines.
+            <h2 className="text-3xl font-bold mb-4 text-emerald-500">Our Mission Statement</h2>
+            <p className={`text-lg mb-6 italic ${toggleTheme ? "text-slate-300" : "text-slate-600"}`}>
+              &quot; Empowering aspiring athletes with elite coaching, cutting-edge training facilities, and a holistic approach to foster excellence in sportsmanship, performance, and character development at Agroterra Sports Academy. &quot;
             </p>
             <div className="flex items-center gap-4 text-emerald-500">
-              <FaTrophy size={24} />
-              <span className="font-semibold">Champions of tomorrow</span>
+              <FaBullseye size={24} />
+              <span className="font-semibold">Holistic athlete development</span>
             </div>
           </motion.div>
         </div>
@@ -267,7 +265,7 @@ export default function About() {
             viewport={{ once: true }}
             className={`text-lg text-center mb-8 max-w-3xl mx-auto ${toggleTheme ? "text-slate-300" : "text-slate-600"}`}
           >
-            Founded in 2024 in Lagos, Agroterra has grown into a leading academy, training athletes in football, basketball, athletics, tennis, table tennis, squash, and golf. We&apos;ve produced national stars like [Star Name] and athletes such as [Athlete Name] who&apos;ve continued to international success.
+            Founded in 2021 in Joga Orile, Ogun State, Agroterra has grown into a leading academy, training athletes in football, basketball, athletics, tennis, table tennis, squash, and golf. We&apos;ve produced national stars like Ronke Akanbi, Hamid Sambo and athletes such as Kudoro Taiwo who&apos;ve continued to international success.
           </motion.p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
             <div className="text-center">
