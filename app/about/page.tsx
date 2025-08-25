@@ -6,17 +6,23 @@ import { motion } from "framer-motion";
 import { useTheme } from "../context/ThemeContext";
 import { FaTrophy, FaUsers, FaBullseye, FaFootballBall, FaBasketballBall, FaRunning, FaTableTennis, FaGolfBall, FaVolleyballBall } from "react-icons/fa";
 import demoImage from "@/public/Slider-Lagos-Tigers-Basketball-Launch-2024-.jpg"; // Use your actual hero image
+import founderImage from "@/public/BABA1.jpg";
+import dirImage1 from "@/public/Yomi.jpg"
+import dirImage2 from "@/public/Raji1.jpg"
+import headImage from "@/public/Coach Ojuola.jpg"
+import techImage from "@/public/Coach Lekan.jpg"
+// import conImage from "@/public/"
 
 export default function About() {
   const { toggleTheme } = useTheme();
 
   // Team data with expanded coaches
   const teamMembers = [
-    { name: "Rasheed Afonja", role: "Founder & CEO", bio: "With 20+ years in sports management, John founded Agroterra to nurture talent.", image: demoImage },
-    { name: "Yomi Lad-Durojaiye", role: "Director", bio: "With 20+ years in sports management, John founded Agroterra to nurture talent.", image: demoImage },
-    { name: "Muiz Raji", role: "Director", bio: "With 20+ years in sports management, John founded Agroterra to nurture talent.", image: demoImage },
-    { name: "Ojuola Oladiran Ayinde", role: "Head Coach (Athletics)", bio: "Track and Field Guru. Specialist in sprints and middle Distance events.", image: demoImage },
-    { name: "Olalekan Soetan", role: "Master tactician and special consultant", bio: "A wonderful Track and Field coach. Specialist in hurdles and jumps events.", image: demoImage },
+    { name: "Rasheed Afonja", role: "Founder & CEO", bio: "With 20+ years in sports management, John founded Agroterra to nurture talent.", image: founderImage },
+    { name: "Yomi Lad-Durojaiye", role: "Director", bio: "With 20+ years in sports management, John founded Agroterra to nurture talent.", image: dirImage1 },
+    { name: "Muiz Raji", role: "Director", bio: "With 20+ years in sports management, John founded Agroterra to nurture talent.", image: dirImage2 },
+    { name: "Ojuola Oladiran Ayinde", role: "Head Coach (Athletics)", bio: "Track and Field Guru. Specialist in sprints and middle Distance events.", image: headImage },
+    { name: "Olalekan Soetan", role: "Master tactician and special consultant", bio: "A wonderful Track and Field coach. Specialist in hurdles and jumps events.", image: techImage },
     { name: "Babajide Odedeji", role: "Sport Consultant", bio: "Oversees operations for top-tier facilities.", image: demoImage },
   ];
 
