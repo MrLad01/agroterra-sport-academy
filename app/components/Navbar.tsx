@@ -6,7 +6,8 @@ import React, { useState, useRef, useEffect } from 'react'
 import { TfiMenu } from 'react-icons/tfi'
 import { IoChevronDown } from 'react-icons/io5'
 import { useTheme } from '../context/ThemeContext'
-
+import logo from '@/public/ASA logo.jpg'
+import Image from 'next/image'
 
 
 export default function Navbar() {
@@ -55,11 +56,12 @@ export default function Navbar() {
         : 'bg-white/90 border-b border-emerald-200/50 shadow-lg shadow-emerald-100/20'
     }`}>
       {/* Logo */}
-      <Link href="/" className={`font-bold text-xl bg-gradient-to-r ${
+      <Link href="/" className={`font-bold text-base bg-gradient-to-r flex items-center gap-2  ${
         toggle 
           ? 'from-emerald-400 to-green-300 text-transparent bg-clip-text' 
           : 'from-emerald-600 to-green-700 text-transparent bg-clip-text'
       } hover:scale-105 transition-transform duration-200`}>
+        <Image src={logo} alt='ASA logo' width={50} height={50} />
         Agroterra Sport Academy
       </Link>
 
