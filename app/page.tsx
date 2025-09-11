@@ -5,10 +5,21 @@ import Link from 'next/link'
 import { motion, AnimatePresence, Variants } from 'framer-motion'
 // import Navbar from './components/Navbar'
 // import { SidebarComponent } from './components/Sidebar'
+// import bgImage3 from '@/public/DAY2L (311).jpg'
+// import bgImage3 from '@/public/DAY2L (307).jpg'
+// import bgImage4 from '@/public/DAY2L (311).jpg'
 import bgImage from '@/public/Slider-Lagos-Tigers-Basketball-Launch-2024-.jpg'
 import bgImage2 from '@/public/DAY2L (305).jpg'
-import bgImage3 from '@/public/DAY2L (307).jpg'
-import bgImage4 from '@/public/DAY2L (311).jpg'
+import bgImage3 from '@/public/Screenshot 2025-09-06 161902.png'
+import bgImage4 from '@/public/Screenshot 2025-09-06 161137.png'
+import bgImage5 from '@/public/Screenshot 2025-09-06 154334.png'
+import athImage from '@/public/Screenshot 2025-09-06 161536.png'
+import athImage2 from '@/public/Screenshot 2025-09-06 161845.png'
+import athImage3 from '@/public/Screenshot 2025-09-06 161027.png'
+import athImage4 from '@/public/Screenshot 2025-09-06 161209.png'
+import gymImage1 from '@/public/Gym1.jpg'
+import gymImage2 from '@/public/Gym2.jpg'
+import indoorHallImage from '@/public/Screenshot 2025-09-06 161857.png'
 import adImage from '@/public/LTFC-2025-Summer-Camp-1.jpg'
 import { useState, useEffect, useRef } from 'react'
 import { FaArrowLeft, FaArrowRight, FaPlay, FaRunning, FaStar, FaDumbbell, FaSwimmer, FaFire, FaClock, FaUsers, FaChevronRight } from 'react-icons/fa'
@@ -117,7 +128,7 @@ export default function Home() {
       title: 'Elite Performance Academy',
       subtitle: 'Professional Athlete Development Program',
       desc: 'Transform into a world-class athlete with our comprehensive elite training program. Featuring Olympic-level coaching, personalized nutrition plans, and cutting-edge sports science.',
-      image: bgImage,
+      image: athImage,
       badge: 'PROFESSIONAL',
       duration: '12 Months',
       level: 'Advanced',
@@ -132,7 +143,7 @@ export default function Home() {
       title: 'Youth Champion Development',
       subtitle: 'Future Stars Training Program',
       desc: 'Nurture young talent with our comprehensive youth development program. Age-appropriate training, character building, and fun-focused learning environment for tomorrow\'s champions.',
-      image: bgImage,
+      image: athImage4,
       badge: 'AGES 8-16',
       duration: '6 Months',
       level: 'Beginner to Intermediate',
@@ -147,7 +158,7 @@ export default function Home() {
       title: 'Ultimate Fitness Transformation',
       subtitle: 'Complete Athletic Conditioning',
       desc: 'Revolutionary fitness program combining strength training, endurance building, and athletic conditioning. Transform your body and performance with our science-backed approach.',
-      image: bgImage,
+      image: athImage3,
       badge: 'ALL LEVELS',
       duration: '3 Months',
       level: 'All Levels',
@@ -161,18 +172,9 @@ export default function Home() {
 
   const facilities = [
     {
-      title: 'Olympic Aquatic Center',
-      desc: 'World-class 50m Olympic pool with advanced filtration, underwater cameras, and temperature control systems.',
-      image: bgImage,
-      category: 'AQUATIC',
-      icon: <FaSwimmer />,
-      stats: { capacity: '500 swimmers', depth: '2-4 meters', lanes: '8 Olympic lanes' },
-      highlights: ['Advanced Filtration', 'Underwater Cameras', 'Climate Control']
-    },
-    {
       title: 'Elite Performance Gym',
       desc: 'State-of-the-art fitness center with premium equipment, specialized training zones, and recovery facilities.',
-      image: bgImage,
+      image: gymImage1,
       category: 'FITNESS',
       icon: <FaDumbbell />,
       stats: { equipment: '200+ machines', area: '5000 sq ft', access: '24/7 access' },
@@ -181,7 +183,7 @@ export default function Home() {
     {
       title: 'Championship Sports Arena',
       desc: 'Multi-purpose indoor arena with professional courts for basketball, volleyball, badminton, and more.',
-      image: bgImage,
+      image: indoorHallImage,
       category: 'COURTS',
       icon: <FaRunning />,
       stats: { courts: '6 professional courts', capacity: '2000 spectators', sports: '8 different sports' },
@@ -190,25 +192,16 @@ export default function Home() {
     {
       title: 'Athletic Performance Track',
       desc: 'Regulation 400m track with synthetic surface, field event areas, and professional timing systems.',
-      image: bgImage,
+      image: athImage2,
       category: 'TRACK',
       icon: <FaRunning />,
       stats: { distance: '400m regulation', surface: 'Synthetic track', events: '12 field events' },
       highlights: ['Regulation Track', 'Synthetic Surface', 'Timing Systems']
     },
     {
-      title: 'Recovery & Wellness Spa',
-      desc: 'Luxury recovery center with ice baths, saunas, massage therapy, and sports medicine facilities.',
-      image: bgImage,
-      category: 'RECOVERY',
-      icon: <FaStar />,
-      stats: { services: '12 wellness services', therapists: 'Licensed professionals', hours: 'Extended hours' },
-      highlights: ['Ice Baths', 'Sauna Therapy', 'Sports Medicine']
-    },
-    {
       title: 'Natural Training Fields',
       desc: 'Premium natural grass fields perfect for football, rugby, and outdoor team sports with professional drainage.',
-      image: bgImage,
+      image: bgImage5,
       category: 'OUTDOOR',
       icon: <FaRunning />,
       stats: { fields: '4 regulation fields', surface: 'Natural grass', drainage: 'Professional system' },
@@ -535,14 +528,14 @@ export default function Home() {
                           <span>{program.rating}</span>
                         </motion.div>
                       </div>
-                      <motion.div
+                      {/* <motion.div
                         className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                         whileHover={{ scale: 1.1 }}
                       >
                         <div className="w-16 h-16 bg-white/20 backdrop-blur-xl rounded-full flex items-center justify-center border-2 border-white/30">
                           <FaPlay className="text-white text-xl ml-1" />
                         </div>
-                      </motion.div>
+                      </motion.div> */}
                     </div>
                     <div className="p-6 flex flex-col justify-between md:w-1/2">
                       <div className="space-y-4">

@@ -10,7 +10,7 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import heroImage from "@/public/Slider-Lagos-Tigers-Basketball-Launch-2024-.jpg"; // Single image for all sections
+import heroImage from "@/public/Screenshot 2025-09-06 153708.png"; // Single image for all sections
 
 export default function Golf() {
   const { toggleTheme } = useTheme();
