@@ -19,15 +19,16 @@ export default function Tennis() {
     <div className={`min-h-screen pt-16 ${toggleTheme ? "bg-slate-900 text-emerald-100" : "bg-gray-50 text-slate-900"} transition-colors duration-300 font-sans`}>
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-emerald-900/50 to-slate-900/50">
-        <Image
-          src={heroImage}
-          alt="Agroterra Tennis Hero"
-          fill
-          className="object-cover object-center brightness-100 scale-105"
-          priority
-          quality={95}
-          placeholder="blur"
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/Screenshot 2025-09-06 161621.png"
+          className="absolute top-0 left-0 w-full h-full object-cover object-center brightness-100 scale-105"
+        >
+          <source src="/videos/tennis-1-1.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
           <motion.h1
