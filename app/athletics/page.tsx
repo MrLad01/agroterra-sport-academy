@@ -12,6 +12,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import heroImage from "@/public/Slider-Lagos-Tigers-Basketball-Launch-2024-.jpg"; // Single image for all sections
 import ronkeImage from '@/public/ronke.jpg'
+import track from '@/public/Screenshot 2025-09-06 161536.png'
 
 export default function Athletics() {
   const { toggleTheme } = useTheme();
@@ -20,16 +21,22 @@ export default function Athletics() {
     <div className={`min-h-screen pt-16 ${toggleTheme ? "bg-slate-900 text-emerald-100" : "bg-gray-50 text-slate-900"} transition-colors duration-300 font-sans`}>
       {/* Hero Section - Adjusted colors to match Contact.jsx, more vibrant */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-emerald-900/50 to-slate-900/50">
-        <Image
-          src={heroImage}
-          alt="Agroterra Athletics Hero"
-          fill
-          className="object-cover object-center brightness-100 scale-105"
-          priority
-          quality={95}
-          placeholder="blur"
-        />
+        {/* Video Background */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/Screenshot 2025-09-06 161536.png"
+          className="absolute top-0 left-0 w-full h-full object-cover object-center brightness-100 scale-105"
+        >
+          <source src="/videos/athletics-1.mp4" type="video/mp4" />
+        </video>
+
+        {/* Keep your existing overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
+
+        {/* All your existing content remains the same */}
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -97,7 +104,7 @@ export default function Athletics() {
             className="mb-12"
           >
             <SwiperSlide>
-              <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20': 'bg-white'} `}>
+              <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20' : 'bg-white'} `}>
                 <Image
                   src={heroImage}
                   alt="Jane Smith - Head Coach"
@@ -105,14 +112,14 @@ export default function Athletics() {
                   height={300}
                   className="w-full h-64 object-cover rounded-xl mb-4"
                 />
-                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500' }`}>Jane Smith - Head Coach</h3>
+                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Jane Smith - Head Coach</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
                   Olympic gold medalist with 15 years of coaching expertise, Jane has mentored athletes to national records. &quot;Your limits are your launchpad,&quot; she says, crafting bespoke plans that blend technique, resilience, and vision to propel you to global glory.
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20': 'bg-white'} `}>
+              <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20' : 'bg-white'} `}>
                 <Image
                   src={heroImage}
                   alt="Mike Johnson - Sprint Coach"
@@ -120,14 +127,14 @@ export default function Athletics() {
                   height={300}
                   className="w-full h-64 object-cover rounded-xl mb-4"
                 />
-                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500' }`}>Mike Johnson - Sprint Coach</h3>
+                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Mike Johnson - Sprint Coach</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
                   A 10.1s 100m national sprinter, Mike’s coaching fuses biomechanics with mental toughness. &quot;Speed is a mindset,&quot; he insists, turning raw talent into Olympic hopefuls. Join him to outrun your doubts and dominate the track.
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20': 'bg-white'} `}>
+              <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20' : 'bg-white'} `}>
                 <Image
                   src={heroImage}
                   alt="Sarah Lee - Long Jump Coach"
@@ -135,14 +142,14 @@ export default function Athletics() {
                   height={300}
                   className="w-full h-64 object-cover rounded-xl mb-4"
                 />
-                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500' }`}>Sarah Lee - Long Jump Coach</h3>
+                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Sarah Lee - Long Jump Coach</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
                   With a 7.2m leap and world-class experience, Sarah teaches precision and power. &quot;Every jump tells a story,&quot; she believes, guiding athletes to soar physically and mentally. Her jumpers are rewriting records—be the next.
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20': 'bg-white'} `}>
+              <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20' : 'bg-white'} `}>
                 <Image
                   src={heroImage}
                   alt="Tom Brown - Cross Country Coach"
@@ -150,7 +157,7 @@ export default function Athletics() {
                   height={300}
                   className="w-full h-64 object-cover rounded-xl mb-4"
                 />
-                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500' }`}>Tom Brown - Cross Country Coach</h3>
+                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Tom Brown - Cross Country Coach</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
                   A marathon icon, Tom builds endurance titans. &quot;Win the race in your mind first,&quot; he coaches, blending stamina and strategy to conquer distances. His runners earn national titles—start your journey to greatness with him.
                 </p>
@@ -201,7 +208,7 @@ export default function Athletics() {
             >
               <div className="w-full md:w-1/2">
                 <Image
-                  src={heroImage}
+                  src={track}
                   alt="Olympic Track"
                   width={400}
                   height={300}
@@ -210,7 +217,7 @@ export default function Athletics() {
               </div>
               <div className="w-full md:w-1/2">
                 <FaRunning className="text-emerald-400 text-4xl mb-4" />
-                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500' }`}>Olympic-Standard Track</h3>
+                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Olympic-Standard Track</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
                   Unveiled August 10, 2024, our 400m synthetic track is engineered for speed and safety. With pro-grade lighting and advanced surfaces, it’s where national records are shattered. Feel the pulse of champions beneath your feet and sprint toward your destiny.
                 </p>
@@ -235,7 +242,7 @@ export default function Athletics() {
               </div>
               <div className="w-full md:w-1/2">
                 <FaUsers className="text-emerald-400 text-4xl mb-4" />
-                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500' }`}>Elite Training Gym</h3>
+                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Elite Training Gym</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
                   Revamped March 2025, our gym is a powerhouse of strength. Olympic-grade equipment, cutting-edge cardio, and injury-prevention tech transform raw potential into unstoppable force. Build the physique of a champion and dominate your field.
                 </p>
@@ -260,7 +267,7 @@ export default function Athletics() {
               </div>
               <div className="w-full md:w-1/2">
                 <FaTrophy className="text-emerald-400 text-4xl mb-4" />
-                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500' }`}>Advanced Recovery Center</h3>
+                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Advanced Recovery Center</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
                   Launched July 15, 2025, our recovery center offers cryotherapy, hydrotherapy, and expert physiotherapy. It’s your sanctuary to rebound stronger and stay in peak form. Recover like a pro and keep pushing the boundaries of what’s possible.
                 </p>
@@ -314,7 +321,7 @@ export default function Athletics() {
             className="mb-12"
           >
             <SwiperSlide>
-              <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20': 'bg-white'} `}>
+              <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20' : 'bg-white'} `}>
                 <Image
                   src={ronkeImage}
                   alt="Ronke Akanbi"
@@ -322,15 +329,15 @@ export default function Athletics() {
                   height={400}
                   className="w-full h-64 object-cover rounded-xl mb-4"
                 />
-                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500' }`}>Ronke Akanbi - 3000m Sensation</h3>
-                <p className={`text-base ${ toggleTheme ? 'text-slate-300': 'text-slate-500'} mb-2`}>National Champion 2024 | 11.2s Record</p>
-                <p className={`text-sm ${toggleTheme ? 'text-emerald-100': 'text-emerald-400'} italic`}>
+                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Ronke Akanbi - 3000m Sensation</h3>
+                <p className={`text-base ${toggleTheme ? 'text-slate-300' : 'text-slate-500'} mb-2`}>National Champion 2024 | 11.2s Record</p>
+                <p className={`text-sm ${toggleTheme ? 'text-emerald-100' : 'text-emerald-400'} italic`}>
                   &quot;Agroterra gave me the tools to sprint past my fears. At 18, I’m a national champ—your turn is next!&quot;
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20': 'bg-white'} `}>
+              <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20' : 'bg-white'} `}>
                 <Image
                   src={heroImage}
                   alt="Kwame Adebayo"
@@ -338,9 +345,9 @@ export default function Athletics() {
                   height={300}
                   className="w-full h-64 object-cover rounded-xl mb-4"
                 />
-                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500' }`}>Kwame Adebayo - Long Jump Prodigy</h3>
-                <p className={`text-base ${ toggleTheme ? 'text-slate-300': 'text-slate-500'} mb-2`}>African Silver 2025 | 8.1m Leap</p>
-                <p className={`text-sm ${toggleTheme ? 'text-emerald-100': 'text-emerald-400'} italic`}>
+                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Kwame Adebayo - Long Jump Prodigy</h3>
+                <p className={`text-base ${toggleTheme ? 'text-slate-300' : 'text-slate-500'} mb-2`}>African Silver 2025 | 8.1m Leap</p>
+                <p className={`text-sm ${toggleTheme ? 'text-emerald-100' : 'text-emerald-400'} italic`}>
                   &quot;From local tracks to global podiums, Agroterra made me soar. Take the leap and join the revolution!&quot;
                 </p>
               </div>
@@ -399,7 +406,7 @@ export default function Athletics() {
               </div>
               <div className="w-full md:w-1/2">
                 <FaTrophy className="text-emerald-400 text-4xl mb-4" />
-                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500' }`}>National Relay Champions 2024</h3>
+                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>National Relay Champions 2024</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
                   On August 20, 2024, our relay team blazed to a historic 3:12.50, clinching the national title with sheer heart and teamwork. This wasn’t just a win—it was a testament to what’s possible when passion meets precision. Join us and add your name to this legacy.
                 </p>
@@ -424,7 +431,7 @@ export default function Athletics() {
               </div>
               <div className="w-full md:w-1/2">
                 <FaUsers className="text-emerald-400 text-4xl mb-4" />
-                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500' }`}>Five National Medalists</h3>
+                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Five National Medalists</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
                   In two years, we’ve produced five national medalists and two African Championship qualifiers. Each medal reflects our commitment to unlocking your potential. Your podium awaits—step up and claim it with Agroterra.
                 </p>
@@ -449,7 +456,7 @@ export default function Athletics() {
               </div>
               <div className="w-full md:w-1/2">
                 <FaRunning className="text-emerald-400 text-4xl mb-4" />
-                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500' }`}>Agroterra Invitational 2025</h3>
+                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Agroterra Invitational 2025</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
                   On August 15, 2025, our Invitational Meet drew 200+ elite athletes, showcasing our world-class facilities. This wasn’t just an event—it was a launchpad for careers. Compete here and let your journey to global stardom begin.
                 </p>
@@ -545,7 +552,7 @@ export default function Athletics() {
             className="flex justify-center items-center gap-4 mb-10"
           >
             <FaMapMarkerAlt className="text-emerald-400 text-3xl" />
-            <span className={`text-lg sm:text-xl ${toggleTheme ? 'text-emerald-100': 'text-emerald-400'}`}>Agroterra Sport Academy, Lekki, Lagos</span>
+            <span className={`text-lg sm:text-xl ${toggleTheme ? 'text-emerald-100' : 'text-emerald-400'}`}>Agroterra Sport Academy, Lekki, Lagos</span>
           </motion.div>
           <motion.div
             variants={sectionVariants}
@@ -580,7 +587,7 @@ export default function Athletics() {
 }
 
 // Animation variants
-const sectionVariants:Variants = {
+const sectionVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };

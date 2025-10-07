@@ -11,6 +11,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import heroImage from "@/public/Slider-Lagos-Tigers-Basketball-Launch-2024-.jpg"; // Single image for all sections
+import fac from "../../public/Screenshot 2025-09-06 161621.png"
+import gym from "../../public/Screenshot 2025-09-06 161027.png"
 
 export default function Basketball() {
   const { toggleTheme } = useTheme();
@@ -19,15 +21,17 @@ export default function Basketball() {
     <div className={`min-h-screen pt-16 ${toggleTheme ? "bg-slate-900 text-emerald-100" : "bg-gray-50 text-slate-900"} transition-colors duration-300 font-sans`}>
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-emerald-900/50 to-slate-900/50">
-        <Image
-          src={heroImage}
-          alt="Agroterra Basketball Hero"
-          fill
-          className="object-cover object-center brightness-100 scale-105"
-          priority
-          quality={95}
-          placeholder="blur"
-        />
+         {/* Video Background */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/Screenshot 2025-09-06 161621.png"
+          className="absolute top-0 left-0 w-full h-full object-cover object-center brightness-100 scale-105"
+        >
+          <source src="/videos/basket-1-1.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
           <motion.h1
@@ -183,8 +187,8 @@ export default function Basketball() {
             >
               <div className="w-full md:w-1/2">
                 <Image
-                  src={heroImage}
-                  alt="Indoor Basketball Court"
+                  src={fac}
+                  alt="Basketball Court"
                   width={400}
                   height={300}
                   className="rounded-xl shadow-lg object-cover"
@@ -192,7 +196,7 @@ export default function Basketball() {
               </div>
               <div className="w-full md:w-1/2">
                 <FaRunning className="text-emerald-400 text-4xl mb-4" />
-                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? "text-emerald-100" : "text-emerald-500"}`}>Indoor Basketball Court</h3>
+                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? "text-emerald-100" : "text-emerald-500"}`}>Basketball Court</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
                   Opened August 2025, our FIBA-standard indoor court features premium hardwood flooring and professional lighting. Perfect your dribbling, shooting, and teamwork in an environment designed to elevate your game from day one.
                 </p>
@@ -208,7 +212,7 @@ export default function Basketball() {
             >
               <div className="w-full md:w-1/2">
                 <Image
-                  src={heroImage}
+                  src={gym}
                   alt="Training Gym"
                   width={400}
                   height={300}

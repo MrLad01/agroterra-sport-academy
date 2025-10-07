@@ -111,7 +111,7 @@ export default function Navbar() {
                     toggle 
                       ? 'text-emerald-100 hover:text-emerald-300 hover:bg-emerald-500/20' 
                       : 'text-slate-700 hover:text-emerald-700 hover:bg-emerald-50'
-                  } first:rounded-t-xl last:rounded-b-xl`}
+                  } ${isActive(sport.href) ? ' text-emerald-300 bg-emerald-500/20' : ''} first:rounded-t-xl last:rounded-b-xl`}
                   onClick={() => setShowSportsDropdown(false)}
                 >
                   {sport.label}

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion, Variants } from "framer-motion";
+import { AnimatePresence, motion, Variants } from "framer-motion";
 import { useTheme } from "../context/ThemeContext";
 import { FaTrophy, FaUsers, FaRunning, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,24 +11,49 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import heroImage from "@/public/Slider-Lagos-Tigers-Basketball-Launch-2024-.jpg"; // Single image for all sections
+import fac from "../../public/Screenshot 2025-09-06 154334.png"
+import annual from "../../public/Screenshot 2025-09-06 161433.png"
+import talent from "../../public/Screenshot 2025-09-06 161326.png"
+import { useState } from "react";
 
 export default function Football() {
   const { toggleTheme } = useTheme();
+  const [currentVideo, setCurrentVideo] = useState(0);
+
+  const videos = [
+    '/videos/fball-1-1.mp4',
+    '/videos/fball-2-1.mp4',
+    '/videos/pitch-1-1.mp4'
+  ];
+  const handleVideoEnd = () => {
+    setCurrentVideo((prev) => (prev + 1) % videos.length);
+  };
+
 
   return (
     <div className={`min-h-screen pt-16 ${toggleTheme ? "bg-slate-900 text-emerald-100" : "bg-gray-50 text-slate-900"} transition-colors duration-300 font-sans`}>
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-emerald-900/50 to-slate-900/50">
-        <Image
-          src={heroImage}
-          alt="Agroterra Football Hero"
-          fill
-          className="object-cover object-center brightness-100 scale-105"
-          priority
-          quality={95}
-          placeholder="blur"
-        />
+        {/* Video Background with Fade Transition */}
+        <AnimatePresence mode="wait">
+          <motion.video
+            key={currentVideo}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+            autoPlay
+            muted
+            playsInline
+            onEnded={handleVideoEnd}
+            className="absolute top-0 left-0 w-full h-full object-cover object-center brightness-100 scale-105"
+          >
+            <source src={videos[currentVideo]} type="video/mp4" />
+          </motion.video>
+        </AnimatePresence>
+
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
+
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -44,7 +69,7 @@ export default function Football() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-sm sm:text-base lg:text-lg mb-10 text-gray-200 leading-relaxed max-w-3xl mx-auto"
           >
-            Dream of dazzling crowds with your footwork, scoring match-winning goals, and earning global scouts’ attention? At Agroterra, we transform raw talent into football stardom with elite coaching, top-tier facilities, and scouting programs that open doors to professional clubs. Your journey to the pitch of greatness starts now—are you ready?
+            Dream of dazzling crowds with your footwork, scoring match-winning goals, and earning global scouts' attention? At Agroterra, we transform raw talent into football stardom with elite coaching, top-tier facilities, and scouting programs that open doors to professional clubs. Your journey to the pitch of greatness starts now—are you ready?
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -197,13 +222,19 @@ export default function Football() {
               className="flex flex-col md:flex-row items-center gap-8"
             >
               <div className="w-full md:w-1/2">
-                <Image
-                  src={heroImage}
-                  alt="FIFA-Standard Pitch"
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   width={400}
                   height={300}
-                  className="rounded-xl shadow-lg object-cover"
-                />
+                  poster="/Screenshot 2025-09-06 154256.png"
+                  className="object-cover object-center brightness-100 rounded-xl shadow-lg"
+                >
+                  <source src="/videos/pitch-1-1.mp4" type="video/mp4" />
+                </video>
+
               </div>
               <div className="w-full md:w-1/2">
                 <FaRunning className="text-emerald-400 text-4xl mb-4" />
@@ -223,7 +254,7 @@ export default function Football() {
             >
               <div className="w-full md:w-1/2">
                 <Image
-                  src={heroImage}
+                  src={fac}
                   alt="Training Complex"
                   width={400}
                   height={300}
@@ -311,7 +342,7 @@ export default function Football() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={annual}
                   alt="Annual Scouting Combine"
                   width={400}
                   height={300}
@@ -326,7 +357,7 @@ export default function Football() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={talent}
                   alt="Youth Talent Showcase"
                   width={400}
                   height={300}
