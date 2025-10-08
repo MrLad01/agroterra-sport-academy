@@ -13,6 +13,7 @@ import "swiper/css/navigation";
 import heroImage from "@/public/Slider-Lagos-Tigers-Basketball-Launch-2024-.jpg"; // Single image for all sections
 import ronkeImage from '@/public/ronke.jpg'
 import track from '@/public/Screenshot 2025-09-06 161536.png'
+import coach from '@/public/coach.jpg'
 
 export default function Athletics() {
   const { toggleTheme } = useTheme();
@@ -106,7 +107,7 @@ export default function Athletics() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20' : 'bg-white'} `}>
                 <Image
-                  src={heroImage}
+                  src={coach}
                   alt="Jane Smith - Head Coach"
                   width={400}
                   height={300}
@@ -121,7 +122,7 @@ export default function Athletics() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20' : 'bg-white'} `}>
                 <Image
-                  src={heroImage}
+                  src={coach}
                   alt="Mike Johnson - Sprint Coach"
                   width={400}
                   height={300}
@@ -136,7 +137,7 @@ export default function Athletics() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20' : 'bg-white'} `}>
                 <Image
-                  src={heroImage}
+                  src={coach}
                   alt="Sarah Lee - Long Jump Coach"
                   width={400}
                   height={300}
@@ -151,7 +152,7 @@ export default function Athletics() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20' : 'bg-white'} `}>
                 <Image
-                  src={heroImage}
+                  src={coach}
                   alt="Tom Brown - Cross Country Coach"
                   width={400}
                   height={300}
