@@ -71,7 +71,7 @@ export default function Football() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-sm sm:text-base lg:text-lg mb-10 text-gray-200 leading-relaxed max-w-3xl mx-auto"
           >
-            Dream of dazzling crowds with your footwork, scoring match-winning goals, and earning global scouts' attention? At Agroterra, we transform raw talent into football stardom with elite coaching, top-tier facilities, and scouting programs that open doors to professional clubs. Your journey to the pitch of greatness starts now—are you ready?
+            Dream of dazzling crowds with your footwork, scoring match-winning goals, and earning global scouts&apos; attention? At Agroterra, we transform raw talent into football stardom with elite coaching, top-tier facilities, and scouting programs that open doors to professional clubs. Your journey to the pitch of greatness starts now—are you ready?
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

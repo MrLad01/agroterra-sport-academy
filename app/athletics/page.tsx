@@ -441,7 +441,7 @@ export default function Athletics() {
                   toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20' : 'bg-white'
                 }`}
               >
-                <img
+                <Image
                   src={athlete.image}
                   alt={athlete.name}
                   className="w-full h-64 object-cover rounded-xl mb-4"
@@ -719,7 +719,7 @@ export default function Athletics() {
 
               {/* Modal Content */}
               <div className="p-8">
-                <img
+                <Image
                   src={selectedAthlete.image}
                   alt={selectedAthlete.name}
                   className="w-60 h-60 object-cover rounded-xl mb-6"
