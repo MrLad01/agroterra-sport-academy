@@ -11,6 +11,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import heroImage from "@/public/Slider-Lagos-Tigers-Basketball-Launch-2024-.jpg"; // Single image for all sections
+import gym from "../../public/Gym1.jpg"
+import coach from '@/public/coach.jpg'
 import fac from "../../public/Screenshot 2025-09-06 154334.png"
 import annual from "../../public/Screenshot 2025-09-06 161433.png"
 import talent from "../../public/Screenshot 2025-09-06 161326.png"
@@ -121,7 +123,7 @@ export default function Football() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={coach}
                   alt="David Okeke - Head Coach"
                   width={400}
                   height={300}
@@ -136,7 +138,7 @@ export default function Football() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={coach}
                   alt="Chika Nwosu - Striker Coach"
                   width={400}
                   height={300}
@@ -151,7 +153,7 @@ export default function Football() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={coach}
                   alt="Emeka Ude - Defense Coach"
                   width={400}
                   height={300}
@@ -166,7 +168,7 @@ export default function Football() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={coach}
                   alt="Tolu Adeyemi - Goalkeeper Coach"
                   width={400}
                   height={300}
@@ -279,7 +281,7 @@ export default function Football() {
             >
               <div className="w-full md:w-1/2">
                 <Image
-                  src={heroImage}
+                  src={gym}
                   alt="Recovery Suite"
                   width={400}
                   height={300}

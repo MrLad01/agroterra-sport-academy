@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTheme } from "../context/ThemeContext";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-import demoImage from "@/public/photo-1501854140801-50d01698950b.webp";
+import demoImage from "@/public/IMG_20231014_074350.jpg";
 
 export default function Contact() {
   const { toggleTheme } = useTheme();

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useTheme } from "../context/ThemeContext";
 import { FaTrophy, FaUsers, FaBullseye, FaFootballBall, FaBasketballBall, FaRunning, FaTableTennis, FaGolfBall, FaVolleyballBall, FaUser } from "react-icons/fa";
-import demoImage from "@/public/IMG_20231014_074350.jpg"; // Use your actual hero image
+import demoImage from "@/public/about.jpg"; // Use your actual hero image
 import founderImage from "@/public/BABA1.jpg";
 import dirImage1 from "@/public/Yomi.jpg"
 import dirImage2 from "@/public/Raji1.jpg"

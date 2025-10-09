@@ -12,11 +12,125 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import heroImage from "@/public/Slider-Lagos-Tigers-Basketball-Launch-2024-.jpg"; // Single image for all sections
 import ronkeImage from '@/public/ronke.jpg'
+import gym1 from '@/public/Gym1.jpg'
+import gym3 from '@/public/Gym2.jpg'
 import track from '@/public/Screenshot 2025-09-06 161536.png'
 import coach from '@/public/coach.jpg'
+import ach from '@/public/achh.jpg'
+import ach1 from '@/public/achh1.jpg'
+import ach2 from '@/public/achh2.jpg'
+import { useState } from "react";
+import { X } from "lucide-react";
+
+interface AthleteDetails {
+  age: number;
+  specialty: string;
+  achievements: string[];
+  story: string;
+}
+
+interface Athlete {
+  id: number;
+  name: string;
+  title: string;
+  achievement: string;
+  quote: string;
+  image: string;
+  details: AthleteDetails;
+}
 
 export default function Athletics() {
   const { toggleTheme } = useTheme();
+
+  const [selectedAthlete, setSelectedAthlete] = useState<Athlete | null>(null);
+
+  const athletes: Athlete[] = [
+    {
+      id: 1,
+      name: "Ronke Akanbi",
+      title: "3000m Sensation",
+      achievement: "National Champion 2024 | 11.2s Record",
+      quote: "Agroterra gave me the tools to sprint past my fears. At 18, I'm a national champ—your turn is next!",
+      image: ronkeImage.src,
+      details: {
+        age: 20,
+        specialty: "3000m Sprint",
+        achievements: [
+          "National Champion 2024",
+          "Personal Best: 11.2 seconds",
+          "Regional Record Holder",
+          "Youth Olympic Qualifier"
+        ],
+        story: "Ronke's journey began on the dusty tracks of her local community. With determination and the support of Agroterra's training program, she transformed from a promising talent into a national champion. Her explosive speed and mental fortitude have made her one of the most exciting prospects in Nigerian athletics."
+      }
+    },
+    {
+      id: 2,
+      name: "Kwame Adebayo",
+      title: "Long Jump Prodigy",
+      achievement: "African Silver 2025 | 8.1m Leap",
+      quote: "From local tracks to global podiums, Agroterra made me soar. Take the leap and join the revolution!",
+      image: heroImage.src,
+      details: {
+        age: 20,
+        specialty: "Long Jump",
+        achievements: [
+          "African Silver Medal 2025",
+          "Personal Best: 8.1 meters",
+          "Continental Championship Finalist",
+          "National Record Holder"
+        ],
+        story: "Kwame's athletic prowess was evident from an early age, but it was the structured training and mentorship at Agroterra that unlocked his true potential. His powerful technique and consistent performance have earned him recognition across the continent, and he's now setting his sights on global competitions."
+      }
+    },
+        {
+      id: 3,
+      name: "Kwame Adebayo",
+      title: "Long Jump Prodigy",
+      achievement: "African Silver 2025 | 8.1m Leap",
+      quote: "From local tracks to global podiums, Agroterra made me soar. Take the leap and join the revolution!",
+      image: heroImage.src,
+      details: {
+        age: 20,
+        specialty: "Long Jump",
+        achievements: [
+          "African Silver Medal 2025",
+          "Personal Best: 8.1 meters",
+          "Continental Championship Finalist",
+          "National Record Holder"
+        ],
+        story: "Kwame's athletic prowess was evident from an early age, but it was the structured training and mentorship at Agroterra that unlocked his true potential. His powerful technique and consistent performance have earned him recognition across the continent, and he's now setting his sights on global competitions."
+      }
+    },
+    {
+      id: 4,
+      name: "Ronke Akanbi",
+      title: "3000m Sensation",
+      achievement: "National Champion 2024 | 11.2s Record",
+      quote: "Agroterra gave me the tools to sprint past my fears. At 18, I'm a national champ—your turn is next!",
+      image: ronkeImage.src,
+      details: {
+        age: 20,
+        specialty: "3000m Sprint",
+        achievements: [
+          "National Champion 2024",
+          "Personal Best: 11.2 seconds",
+          "Regional Record Holder",
+          "Youth Olympic Qualifier"
+        ],
+        story: "Ronke's journey began on the dusty tracks of her local community. With determination and the support of Agroterra's training program, she transformed from a promising talent into a national champion. Her explosive speed and mental fortitude have made her one of the most exciting prospects in Nigerian athletics."
+      }
+    },
+  ];
+
+  const openModal = (athlete: Athlete): void => {
+    setSelectedAthlete(athlete);
+  };
+
+  const closeModal = (): void => {
+    setSelectedAthlete(null);
+  };
+
 
   return (
     <div className={`min-h-screen pt-16 ${toggleTheme ? "bg-slate-900 text-emerald-100" : "bg-gray-50 text-slate-900"} transition-colors duration-300 font-sans`}>
@@ -234,7 +348,7 @@ export default function Athletics() {
             >
               <div className="w-full md:w-1/2">
                 <Image
-                  src={heroImage}
+                  src={gym3}
                   alt="Training Gym"
                   width={400}
                   height={300}
@@ -259,7 +373,7 @@ export default function Athletics() {
             >
               <div className="w-full md:w-1/2">
                 <Image
-                  src={heroImage}
+                  src={gym1}
                   alt="Recovery Center"
                   width={400}
                   height={300}
@@ -310,50 +424,42 @@ export default function Athletics() {
             Our athletes began as dreamers, just like you, fueled by ambition and nurtured by Agroterra’s elite program. Now, they’re national champions, global contenders, and Olympic hopefuls. Their journeys prove that with our support, your potential is limitless. Will you be our next legend?
           </motion.p>
           <Swiper
-            modules={[Pagination, Navigation, Autoplay]}
-            spaceBetween={30}
-            slidesPerView={1}
-            breakpoints={{
-              640: { slidesPerView: 2 },
-            }}
-            // pagination={{ clickable: true }}
-            // navigation
-            autoplay={{ delay: 4000, disableOnInteraction: false }}
-            className="mb-12"
-          >
-            <SwiperSlide>
-              <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20' : 'bg-white'} `}>
-                <Image
-                  src={ronkeImage}
-                  alt="Ronke Akanbi"
-                  width={300}
-                  height={400}
+          modules={[Pagination, Navigation, Autoplay]}
+          spaceBetween={30}
+          slidesPerView={1}
+          breakpoints={{
+            640: { slidesPerView: 2 },
+          }}
+          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          className="mb-12"
+        >
+          {athletes.map((athlete) => (
+            <SwiperSlide key={athlete.id}>
+              <div 
+                onClick={() => openModal(athlete)}
+                className={`relative p-6 rounded-2xl shadow-lg cursor-pointer transition-transform hover:scale-105 ${
+                  toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20' : 'bg-white'
+                }`}
+              >
+                <img
+                  src={athlete.image}
+                  alt={athlete.name}
                   className="w-full h-64 object-cover rounded-xl mb-4"
                 />
-                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Ronke Akanbi - 3000m Sensation</h3>
-                <p className={`text-base ${toggleTheme ? 'text-slate-300' : 'text-slate-500'} mb-2`}>National Champion 2024 | 11.2s Record</p>
+                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>
+                  {athlete.name} - {athlete.title}
+                </h3>
+                <p className={`text-base ${toggleTheme ? 'text-slate-300' : 'text-slate-500'} mb-2`}>
+                  {athlete.achievement}
+                </p>
                 <p className={`text-sm ${toggleTheme ? 'text-emerald-100' : 'text-emerald-400'} italic`}>
-                  &quot;Agroterra gave me the tools to sprint past my fears. At 18, I’m a national champ—your turn is next!&quot;
+                  &quot;{athlete.quote}&quot;
                 </p>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
-              <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20' : 'bg-white'} `}>
-                <Image
-                  src={heroImage}
-                  alt="Kwame Adebayo"
-                  width={400}
-                  height={300}
-                  className="w-full h-64 object-cover rounded-xl mb-4"
-                />
-                <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Kwame Adebayo - Long Jump Prodigy</h3>
-                <p className={`text-base ${toggleTheme ? 'text-slate-300' : 'text-slate-500'} mb-2`}>African Silver 2025 | 8.1m Leap</p>
-                <p className={`text-sm ${toggleTheme ? 'text-emerald-100' : 'text-emerald-400'} italic`}>
-                  &quot;From local tracks to global podiums, Agroterra made me soar. Take the leap and join the revolution!&quot;
-                </p>
-              </div>
-            </SwiperSlide>
-          </Swiper>
+          ))}
+        </Swiper>
+        
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -508,7 +614,13 @@ export default function Athletics() {
             className="rounded-2xl max-w-2xl mx-auto"
           >
             <SwiperSlide>
-              <Image src={heroImage} alt="Agroterra Moment" width={600} height={400} className="rounded-xl shadow-lg" />
+              <Image src={ach} alt="Agroterra Moment" width={600} height={400} className="rounded-xl shadow-lg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={ach1} alt="Agroterra Moment" width={600} height={400} className="rounded-xl shadow-lg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={ach2} alt="Agroterra Moment" width={600} height={400} className="rounded-xl shadow-lg" />
             </SwiperSlide>
           </Swiper>
           <motion.p
@@ -583,6 +695,90 @@ export default function Athletics() {
           </motion.div>
         </div>
       </section>
+      {/* Modal */}
+        {selectedAthlete && (
+          <div 
+            className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
+            onClick={closeModal}
+          >
+            <div 
+              className={`relative max-w-3xl w-full max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl ${
+                toggleTheme ? 'bg-slate-800' : 'bg-white'
+              }`}
+              onClick={(e: React.MouseEvent<HTMLDivElement>) => e.stopPropagation()}
+            >
+              {/* Close Button */}
+              <button
+                onClick={closeModal}
+                className={`absolute top-4 right-4 p-2 rounded-full transition-colors z-10 ${
+                  toggleTheme ? 'bg-slate-700 hover:bg-slate-600 text-white' : 'bg-gray-200 hover:bg-gray-300 text-gray-800'
+                }`}
+              >
+                <X size={24} />
+              </button>
+
+              {/* Modal Content */}
+              <div className="p-8">
+                <img
+                  src={selectedAthlete.image}
+                  alt={selectedAthlete.name}
+                  className="w-60 h-60 object-cover rounded-xl mb-6"
+                />
+
+                <h2 className={`text-4xl font-bold mb-2 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-600'}`}>
+                  {selectedAthlete.name}
+                </h2>
+                
+                <p className={`text-xl mb-4 ${toggleTheme ? 'text-emerald-300' : 'text-emerald-500'}`}>
+                  {selectedAthlete.title}
+                </p>
+
+                <div className={`mb-6 p-4 rounded-lg ${toggleTheme ? 'bg-slate-700/50' : 'bg-emerald-50'}`}>
+                  <p className={`text-lg italic ${toggleTheme ? 'text-slate-300' : 'text-slate-700'}`}>
+                    &quot;{selectedAthlete.quote}&quot;
+                  </p>
+                </div>
+
+                <div className="mb-6">
+                  <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-200' : 'text-emerald-600'}`}>
+                    Profile
+                  </h3>
+                  <div className={`grid grid-cols-2 gap-4 ${toggleTheme ? 'text-slate-300' : 'text-slate-700'}`}>
+                    <div>
+                      <span className="font-semibold">Age:</span> {selectedAthlete.details.age}
+                    </div>
+                    <div>
+                      <span className="font-semibold">Specialty:</span> {selectedAthlete.details.specialty}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mb-6">
+                  <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-200' : 'text-emerald-600'}`}>
+                    Achievements
+                  </h3>
+                  <ul className={`space-y-2 ${toggleTheme ? 'text-slate-300' : 'text-slate-700'}`}>
+                    {selectedAthlete.details.achievements.map((achievement: string, index: number) => (
+                      <li key={index} className="flex items-start">
+                        <span className="text-emerald-500 mr-2">✓</span>
+                        {achievement}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-200' : 'text-emerald-600'}`}>
+                    Story
+                  </h3>
+                  <p className={`leading-relaxed ${toggleTheme ? 'text-slate-300' : 'text-slate-700'}`}>
+                    {selectedAthlete.details.story}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
     </div>
   );
 }

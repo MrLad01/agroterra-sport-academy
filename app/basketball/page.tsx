@@ -13,6 +13,14 @@ import "swiper/css/navigation";
 import heroImage from "@/public/Slider-Lagos-Tigers-Basketball-Launch-2024-.jpg"; // Single image for all sections
 import fac from "../../public/Screenshot 2025-09-06 161621.png"
 import gym from "../../public/Screenshot 2025-09-06 161027.png"
+import gym1 from "../../public/Gym1.jpg"
+import coach from '@/public/coach.jpg'
+import b from '@/public/bball.png'
+import b1 from '@/public/bball1.png'
+import b2 from '@/public/bball2.png'
+import b3 from '@/public/bball3.png'
+import b4 from '@/public/bball4.png'
+import b5 from '@/public/bball5.png'
 
 export default function Basketball() {
   const { toggleTheme } = useTheme();
@@ -100,7 +108,7 @@ export default function Basketball() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={coach}
                   alt="Nkechi Okoro - Head Coach"
                   width={400}
                   height={300}
@@ -115,7 +123,7 @@ export default function Basketball() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={coach}
                   alt="Bola Ade - Shooting Coach"
                   width={400}
                   height={300}
@@ -130,7 +138,7 @@ export default function Basketball() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={coach}
                   alt="Uche Eze - Defense Coach"
                   width={400}
                   height={300}
@@ -237,7 +245,7 @@ export default function Basketball() {
             >
               <div className="w-full md:w-1/2">
                 <Image
-                  src={heroImage}
+                  src={gym1}
                   alt="Recovery Suite"
                   width={400}
                   height={300}
@@ -300,7 +308,7 @@ export default function Basketball() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={b}
                   alt="Youth Development Program"
                   width={400}
                   height={300}
@@ -315,7 +323,7 @@ export default function Basketball() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={b}
                   alt="Community Tournaments"
                   width={400}
                   height={300}
@@ -370,7 +378,22 @@ export default function Basketball() {
             className="rounded-2xl max-w-2xl mx-auto"
           >
             <SwiperSlide>
-              <Image src={heroImage} alt="Agroterra Basketball Moment" width={600} height={400} className="rounded-xl shadow-lg" />
+              <Image src={b} alt="Agroterra Basketball Moment" width={600} height={400} className="rounded-xl shadow-lg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={b1} alt="Agroterra Basketball Moment" width={600} height={400} className="rounded-xl shadow-lg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={b2} alt="Agroterra Basketball Moment" width={600} height={400} className="rounded-xl shadow-lg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={b3} alt="Agroterra Basketball Moment" width={600} height={400} className="rounded-xl shadow-lg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={b4} alt="Agroterra Basketball Moment" width={600} height={400} className="rounded-xl shadow-lg" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={b5} alt="Agroterra Basketball Moment" width={600} height={400} className="rounded-xl shadow-lg" />
             </SwiperSlide>
           </Swiper>
           <motion.p
