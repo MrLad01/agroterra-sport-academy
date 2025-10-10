@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useRef } from "react"; // Removed useState since it's managed by ThemeContext
 import { FaArrowLeft, FaArrowRight, FaCalendarAlt, FaClock, FaMapMarkerAlt, FaChevronRight } from "react-icons/fa";
-import bgImage from "@/public/Slider-Lagos-Tigers-Basketball-Launch-2024-.jpg";
+import bgImage from "@/public/event.png";
 import { useTheme } from "../context/ThemeContext"; // Import the context hook
 
 export default function Events() {

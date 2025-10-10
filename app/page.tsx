@@ -495,7 +495,7 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.2 }}
                   viewport={{ once: true }}
-                  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-white to-gray-50 shadow-lg border border-emerald-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-2"
+                  className={`group relative overflow-hidden rounded-2xl ${!toggleTheme ? "bg-gradient-to-br from-white to-gray-50":""} shadow-lg border border-emerald-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-2`}
                 >
                   <div className="flex flex-col md:flex-row">
                     <div className="relative h-48 md:h-auto md:w-1/2 overflow-hidden">
@@ -548,7 +548,7 @@ export default function Home() {
                           </span>
                         </div>
                         <div>
-                          <h3 className="text-xl font-bold mb-2 text-slate-900">
+                          <h3 className={`text-xl font-bold mb-2 ${toggleTheme ? "text-slate-300" : "text-slate-900"}`}>
                             {program.title}
                           </h3>
                           <p className="text-sm font-medium text-emerald-500">
@@ -640,7 +640,7 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   transition={{ duration: 0.8, delay: index * 0.2 }}
                   viewport={{ once: true }}
-                  className="group relative rounded-3xl overflow-hidden bg-white/80 backdrop-blur-lg shadow-2xl border border-emerald-500/20 hover:shadow-emerald-500/30 transition-all duration-500 hover:-translate-y-3"
+                  className={`group relative rounded-3xl overflow-hidden ${!toggleTheme ? "bg-white/80": "bg-slate-900"} backdrop-blur-lg shadow-2xl border border-emerald-500/20 hover:shadow-emerald-500/30 transition-all duration-500 hover:-translate-y-3`}
                 >
                   <div className="relative h-64 sm:h-80 overflow-hidden rounded-t-3xl">
                     <Image
@@ -684,7 +684,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="p-8 sm:p-10">
-                    <h3 className="text-2xl sm:text-3xl font-extrabold mb-4 group-hover:text-emerald-500 transition-all duration-300">
+                    <h3 className="text-2xl sm:text-3xl font-extrabold mb-4 text-emerald-500 transition-all duration-300">
                       {facility.title}
                     </h3>
                     <p className="text-base text-slate-600 mb-6">
