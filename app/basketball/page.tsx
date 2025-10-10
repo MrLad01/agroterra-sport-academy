@@ -28,7 +28,7 @@ export default function Basketball() {
     <div className={`min-h-screen pt-16 ${toggleTheme ? "bg-slate-900 text-emerald-100" : "bg-gray-50 text-slate-900"} transition-colors duration-300 font-sans`}>
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-emerald-900/50 to-slate-900/50">
-         {/* Video Background */}
+        {/* Video Background */}
         <video
           autoPlay
           loop
@@ -373,9 +373,23 @@ export default function Basketball() {
             modules={[Pagination, Navigation, Autoplay]}
             spaceBetween={30}
             slidesPerView={1}
-            autoplay={{ delay: 5000, disableOnInteraction: false }}
+            autoplay={{ delay: 6000, disableOnInteraction: false }}
             className="rounded-2xl max-w-2xl mx-auto"
           >
+            <SwiperSlide>
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                width={600}
+                height={400}
+                poster="/Screenshot 2025-09-06 154256.png"
+                className="object-cover object-center brightness-100 rounded-xl shadow-lg"
+              >
+                <source src="/videos/basketball-2-1.mp4" type="video/mp4" />
+              </video>
+            </SwiperSlide>
             <SwiperSlide>
               <Image src={b} alt="Agroterra Basketball Moment" width={600} height={400} className="rounded-xl shadow-lg" />
             </SwiperSlide>

@@ -11,6 +11,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import heroImage from "@/public/Screenshot 2025-09-06 153708.png"; // Single image for all sections
+import gym1 from "../../public/Gym1.jpg"
+import fac from "../../public/about.jpg"
+import fac1 from "../../public/golfp.png"
 import { useState } from "react";
 
 export default function Golf() {
@@ -230,7 +233,7 @@ export default function Golf() {
             >
               <div className="w-full md:w-1/2">
                 <Image
-                  src={heroImage}
+                  src={fac}
                   alt="Practice Facilities"
                   width={400}
                   height={300}
@@ -255,7 +258,7 @@ export default function Golf() {
             >
               <div className="w-full md:w-1/2">
                 <Image
-                  src={heroImage}
+                  src={gym1}
                   alt="Recovery Center"
                   width={400}
                   height={300}
@@ -320,7 +323,7 @@ export default function Golf() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={fac1}
                   alt="Junior Golf Academy"
                   width={400}
                   height={300}
@@ -335,7 +338,7 @@ export default function Golf() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={fac}
                   alt="Elite Golf Camps"
                   width={400}
                   height={300}
@@ -383,16 +386,54 @@ export default function Golf() {
             Every drive, every chip, every putt on our 9-hole course captures the artistry of golf. Our gallery showcases the passion and precision of players mastering their craft at Agroterra. This is where your golf journey begins—can you see yourself on the green?
           </motion.p>
           <Swiper
-            modules={[Pagination, Navigation, Autoplay]}
+            modules={[Pagination, Autoplay]}
             spaceBetween={30}
             slidesPerView={1}
-            autoplay={{ delay: 5000, disableOnInteraction: false }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
             pagination={{ clickable: true }}
-            navigation
             className="rounded-2xl max-w-2xl mx-auto"
           >
             <SwiperSlide>
-              <Image src={heroImage} alt="Agroterra Golf Moment" width={600} height={400} className="rounded-xl shadow-lg" />
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                width={600}
+                height={400}
+                poster="/Screenshot 2025-09-06 161853.png"
+                className="object-cover object-center brightness-100 rounded-xl shadow-lg"
+              >
+                <source src="/videos/golf-1.mp4" type="video/mp4" />
+              </video>
+            </SwiperSlide>
+            <SwiperSlide>
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                width={600}
+                height={400}
+                poster="/Screenshot 2025-09-06 161853.png"
+                className="object-cover object-center brightness-100 rounded-xl shadow-lg"
+              >
+                <source src="/videos/golf-2-1.mp4" type="video/mp4" />
+              </video>
+            </SwiperSlide>
+            <SwiperSlide>
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                width={600}
+                height={400}
+                poster="/Screenshot 2025-09-06 161853.png"
+                className="object-cover object-center brightness-100 rounded-xl shadow-lg"
+              >
+                <source src="/videos/golf-3-1.mp4" type="video/mp4" />
+              </video>
             </SwiperSlide>
           </Swiper>
           <motion.p

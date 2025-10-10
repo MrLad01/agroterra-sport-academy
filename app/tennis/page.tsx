@@ -11,6 +11,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import heroImage from "@/public/Slider-Lagos-Tigers-Basketball-Launch-2024-.jpg"; // Single image for all sections
+import coach from '@/public/coach.jpg';
+import court from '@/public/Screenshot 2025-09-06 161544.png';
+import training from '@/public/Screenshot 2025-09-06 161902.png';
+import gym1 from '@/public/Gym1.jpg';
+import fac from "../../public/Screenshot 2025-09-06 154334.png";
 
 export default function Tennis() {
   const { toggleTheme } = useTheme();
@@ -97,7 +102,7 @@ export default function Tennis() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={coach}
                   alt="Adaeze Obi - Head Coach"
                   width={400}
                   height={300}
@@ -112,7 +117,7 @@ export default function Tennis() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={coach}
                   alt="Tunde Afolabi - Technical Coach"
                   width={400}
                   height={300}
@@ -127,7 +132,7 @@ export default function Tennis() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={coach}
                   alt="Ngozi Eke - Mental Conditioning Coach"
                   width={400}
                   height={300}
@@ -184,7 +189,7 @@ export default function Tennis() {
             >
               <div className="w-full md:w-1/2">
                 <Image
-                  src={heroImage}
+                  src={court}
                   alt="ITF-Standard Tennis Courts"
                   width={400}
                   height={300}
@@ -209,7 +214,7 @@ export default function Tennis() {
             >
               <div className="w-full md:w-1/2">
                 <Image
-                  src={heroImage}
+                  src={fac}
                   alt="Training Facility"
                   width={400}
                   height={300}
@@ -234,7 +239,7 @@ export default function Tennis() {
             >
               <div className="w-full md:w-1/2">
                 <Image
-                  src={heroImage}
+                  src={gym1}
                   alt="Recovery Center"
                   width={400}
                   height={300}
@@ -297,7 +302,7 @@ export default function Tennis() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={training}
                   alt="Junior Tennis Academy"
                   width={400}
                   height={300}
@@ -312,7 +317,7 @@ export default function Tennis() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={training}
                   alt="Elite Training Camps"
                   width={400}
                   height={300}
@@ -367,7 +372,18 @@ export default function Tennis() {
             className="rounded-2xl max-w-2xl mx-auto"
           >
             <SwiperSlide>
-              <Image src={heroImage} alt="Agroterra Tennis Moment" width={600} height={400} className="rounded-xl shadow-lg" />
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                width={600}
+                height={400}
+                poster="/Screenshot 2025-09-06 161902.png"
+                className="object-cover object-center brightness-100 rounded-xl shadow-lg"
+              >
+                <source src="/videos/tennis-1-1.mp4" type="video/mp4" />
+              </video>
             </SwiperSlide>
           </Swiper>
           <motion.p

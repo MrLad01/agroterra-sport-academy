@@ -11,6 +11,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import heroImage from "@/public/Slider-Lagos-Tigers-Basketball-Launch-2024-.jpg"; // Single image for all sections
+import coach from '@/public/coach.jpg';
+import fac from '@/public/Screenshot 2025-09-06 161712.png';
+import fac1 from '@/public/Screenshot 2025-09-06 161857.png';
+import program from '@/public/Screenshot 2025-09-06 161853.png';
+import gym1 from '@/public/Gym1.jpg';
 
 export default function TableTennis() {
   const { toggleTheme } = useTheme();
@@ -99,7 +104,7 @@ export default function TableTennis() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={coach}
                   alt="Chidi Okonkwo - Head Coach"
                   width={400}
                   height={300}
@@ -114,7 +119,7 @@ export default function TableTennis() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={coach}
                   alt="Amaka Igwe - Technical Coach"
                   width={400}
                   height={300}
@@ -129,7 +134,7 @@ export default function TableTennis() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={coach}
                   alt="Segun Ade - Mental Conditioning Coach"
                   width={400}
                   height={300}
@@ -186,7 +191,7 @@ export default function TableTennis() {
             >
               <div className="w-full md:w-1/2">
                 <Image
-                  src={heroImage}
+                  src={fac1}
                   alt="ITTF-Standard Tables"
                   width={400}
                   height={300}
@@ -211,7 +216,7 @@ export default function TableTennis() {
             >
               <div className="w-full md:w-1/2">
                 <Image
-                  src={heroImage}
+                  src={fac}
                   alt="Junior Table"
                   width={400}
                   height={300}
@@ -236,7 +241,7 @@ export default function TableTennis() {
             >
               <div className="w-full md:w-1/2">
                 <Image
-                  src={heroImage}
+                  src={gym1}
                   alt="Recovery Center"
                   width={400}
                   height={300}
@@ -301,7 +306,7 @@ export default function TableTennis() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={fac}
                   alt="Junior Table Tennis Program"
                   width={400}
                   height={300}
@@ -316,7 +321,7 @@ export default function TableTennis() {
             <SwiperSlide>
               <div className={`relative p-6 rounded-2xl shadow-lg ${toggleTheme ? "bg-gradient-to-br from-emerald-800/20 to-slate-800/20" : "bg-white"}`}>
                 <Image
-                  src={heroImage}
+                  src={program}
                   alt="Competitive Training Camp"
                   width={400}
                   height={300}
@@ -373,7 +378,18 @@ export default function TableTennis() {
             className="rounded-2xl max-w-2xl mx-auto"
           >
             <SwiperSlide>
-              <Image src={heroImage} alt="Agroterra Table Tennis Moment" width={600} height={400} className="rounded-xl shadow-lg" />
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                width={600}
+                height={400}
+                poster="/Screenshot 2025-09-06 161853.png"
+                className="object-cover object-center brightness-100 rounded-xl shadow-lg"
+              >
+                <source src="/videos/ttenis-1-1.mp4" type="video/mp4" />
+              </video>
             </SwiperSlide>
           </Swiper>
           <motion.p

@@ -414,7 +414,18 @@ export default function Football() {
             className="rounded-2xl max-w-2xl mx-auto"
           >
             <SwiperSlide>
-              <Image src={heroImage} alt="Agroterra Football Moment" width={600} height={400} className="rounded-xl shadow-lg" />
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                width={600}
+                height={400}
+                poster="/Screenshot 2025-09-06 154256.png"
+                className="object-cover object-center brightness-100 rounded-xl shadow-lg"
+              >
+                <source src="/videos/Rapheal.mp4" type="video/mp4" />
+              </video>
             </SwiperSlide>
           </Swiper>
           <motion.p
