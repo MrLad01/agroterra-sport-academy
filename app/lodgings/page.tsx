@@ -5,11 +5,17 @@ import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTheme } from "../context/ThemeContext";
 import { FaBed, FaMapMarkerAlt, FaStar, FaShower, FaWifi, FaFootballBall, FaSwimmer, FaUtensils, FaChevronRight, FaArrowLeft, FaArrowRight } from "react-icons/fa";
-// import demoImage from "@/public/photo-1501854140801-50d01698950b.webp";
 import img1 from "@/public/dorm.jpg";
-// import img2 from "@/public/dorm1.jpg";
-import img3 from "@/public/dorm2.jpg";
-import img4 from "@/public/dorm3.jpg";
+import img6 from "@/public/lodge5.jpg";
+import img7 from "@/public/house2.png";
+import img8 from "@/public/house3.png";
+import img9 from "@/public/house4.png";
+import img10 from "@/public/house5.png";
+import img11 from "@/public/house6.png";
+import img12 from "@/public/house7.png";
+import img13 from "@/public/dorm5.png";
+import img14 from "@/public/dorm6.png";
+import img15 from "@/public/dorm7.png";
 import { useEffect, useState } from "react";
 
 export default function Lodgings() {
@@ -28,7 +34,7 @@ export default function Lodgings() {
       location: "Agroterra Sport Academy Campus, Lekki",
       price: "$50/night",
       rating: 4.6,
-      images: [img1, img4], // Interior views
+      images: [img13, img14, img15], // Interior views
       amenities: [
         { icon: FaBed, name: "Bunk Beds" },
         { icon: FaShower, name: "Shared Bathrooms" },
@@ -44,7 +50,7 @@ export default function Lodgings() {
       location: "Victoria Island, Lagos",
       price: "$180/night",
       rating: 4.9,
-      images: [img1, img3], // Interior views
+      images: [img1, img6, img7, img8, img9, img10, img12], // Interior views
       amenities: [
         { icon: FaBed, name: "King-Size Beds" },
         { icon: FaShower, name: "En-Suite Bathrooms" },
