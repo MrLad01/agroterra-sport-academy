@@ -441,9 +441,11 @@ export default function Athletics() {
                   toggleTheme ? 'bg-gradient-to-br from-emerald-800/20 to-slate-800/20' : 'bg-white'
                 }`}
               >
-                <img
+                <Image
                   src={athlete.image}
                   alt={athlete.name}
+                  width={400}
+                  height={300}
                   className="w-full h-64 object-cover rounded-xl mb-4"
                 />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>
@@ -719,19 +721,26 @@ export default function Athletics() {
 
               {/* Modal Content */}
               <div className="p-8">
-                <img
-                  src={selectedAthlete.image}
-                  alt={selectedAthlete.name}
-                  className="w-60 h-60 object-cover rounded-xl mb-6"
-                />
+                <div className="flex gap-4 items-end justify-between">
+                  <Image
+                    src={selectedAthlete.image}
+                    alt={selectedAthlete.name}
+                    width={400}
+                    height={300}
+                    className="w-60 h-60 object-cover rounded-xl mb-6"
+                  />
 
-                <h2 className={`text-4xl font-bold mb-2 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-600'}`}>
-                  {selectedAthlete.name}
-                </h2>
-                
-                <p className={`text-xl mb-4 ${toggleTheme ? 'text-emerald-300' : 'text-emerald-500'}`}>
-                  {selectedAthlete.title}
-                </p>
+                  <div className="pb-5">
+                    <h2 className={`text-4xl font-bold mb-2 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-600'}`}>
+                      {selectedAthlete.name}
+                    </h2>
+                    
+                    <p className={`text-xl mb-4 ${toggleTheme ? 'text-emerald-300' : 'text-emerald-500'}`}>
+                      {selectedAthlete.title}
+                    </p>
+                  </div>
+
+                </div>
 
                 <div className={`mb-6 p-4 rounded-lg ${toggleTheme ? 'bg-slate-700/50' : 'bg-emerald-50'}`}>
                   <p className={`text-lg italic ${toggleTheme ? 'text-slate-300' : 'text-slate-700'}`}>

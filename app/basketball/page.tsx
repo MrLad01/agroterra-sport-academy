@@ -10,7 +10,6 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import heroImage from "@/public/Slider-Lagos-Tigers-Basketball-Launch-2024-.jpg"; // Single image for all sections
 import fac from "../../public/Screenshot 2025-09-06 161621.png"
 import gym from "../../public/Screenshot 2025-09-06 161027.png"
 import gym1 from "../../public/Gym1.jpg"
