@@ -32,7 +32,7 @@ export default function TableTennis() {
           poster="/Screenshot 2025-09-06 161621.png"
           className="absolute top-0 left-0 w-full h-full object-cover object-center brightness-100 scale-105"
         >
-          <source src="/videos/ttenis-1-1.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/do7woqgon/video/upload/v1771681610/ttenis-1-1_d82ibt.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
@@ -388,7 +388,7 @@ export default function TableTennis() {
                 poster="/Screenshot 2025-09-06 161853.png"
                 className="object-cover object-center brightness-100 rounded-xl shadow-lg"
               >
-                <source src="/videos/ttenis-1-1.mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/do7woqgon/video/upload/v1771681610/ttenis-1-1_d82ibt.mp4" type="video/mp4" />
               </video>
             </SwiperSlide>
           </Swiper>

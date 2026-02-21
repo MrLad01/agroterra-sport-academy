@@ -145,7 +145,7 @@ export default function Athletics() {
           poster="/Screenshot 2025-09-06 161536.png"
           className="absolute top-0 left-0 w-full h-full object-cover object-center brightness-100 scale-105"
         >
-          <source src="/videos/athletics-1.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/do7woqgon/video/upload/v1771681247/athletics-1_xilwy7.mp4" type="video/mp4" />
         </video>
 
         {/* Keep your existing overlay */}

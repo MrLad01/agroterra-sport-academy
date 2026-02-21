@@ -21,9 +21,9 @@ export default function Golf() {
   const [currentVideo, setCurrentVideo] = useState(0);
 
   const videos = [
-    '/videos/golf-1.mp4',
-    '/videos/golf-2-1.mp4',
-    '/videos/golf-3-1.mp4'
+    'https://res.cloudinary.com/do7woqgon/video/upload/v1771682617/golf-1_rv2eny.mp4',
+    'https://res.cloudinary.com/do7woqgon/video/upload/v1771681520/golf-2-1_bhjsia.mp4',
+    'https://res.cloudinary.com/do7woqgon/video/upload/v1771681535/golf-3-1_vbwk8w.mp4'
   ];
 
   const handleVideoEnd = () => {
@@ -404,7 +404,7 @@ export default function Golf() {
                 poster="/Screenshot 2025-09-06 161853.png"
                 className="object-cover object-center brightness-100 rounded-xl shadow-lg"
               >
-                <source src="/videos/golf-1.mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/do7woqgon/video/upload/v1771682617/golf-1_rv2eny.mp4" type="video/mp4" />
               </video>
             </SwiperSlide>
             <SwiperSlide>
@@ -418,7 +418,7 @@ export default function Golf() {
                 poster="/Screenshot 2025-09-06 161853.png"
                 className="object-cover object-center brightness-100 rounded-xl shadow-lg"
               >
-                <source src="/videos/golf-2-1.mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/do7woqgon/video/upload/v1771681520/golf-2-1_bhjsia.mp4" type="video/mp4" />
               </video>
             </SwiperSlide>
             <SwiperSlide>
@@ -432,7 +432,7 @@ export default function Golf() {
                 poster="/Screenshot 2025-09-06 161853.png"
                 className="object-cover object-center brightness-100 rounded-xl shadow-lg"
               >
-                <source src="/videos/golf-3-1.mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/do7woqgon/video/upload/v1771681535/golf-3-1_vbwk8w.mp4" type="video/mp4" />
               </video>
             </SwiperSlide>
           </Swiper>

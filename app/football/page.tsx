@@ -24,8 +24,8 @@ export default function Football() {
 
   const videos = [
     'https://res.cloudinary.com/do7woqgon/video/upload/v1771680957/fball-1-1_zdemn1.mp4',
-    '/videos/fball-2-1.mp4',
-    '/videos/pitch-1-1.mp4'
+    'https://res.cloudinary.com/do7woqgon/video/upload/v1771681501/fball-2-1_x5rwoc.mp4',
+    'https://res.cloudinary.com/do7woqgon/video/upload/v1771681579/pitch-1-1_dpd5x7.mp4'
   ];
   const handleVideoEnd = () => {
     setCurrentVideo((prev) => (prev + 1) % videos.length);
@@ -226,7 +226,7 @@ export default function Football() {
               <div className="w-full md:w-1/2">
                 <video
                   autoPlay
-                  src={`/videos/pitch-1-1.mp4`}
+                  src={`https://res.cloudinary.com/do7woqgon/video/upload/v1771681579/pitch-1-1_dpd5x7.mp4`}
                   loop
                   muted
                   playsInline
@@ -425,7 +425,7 @@ export default function Football() {
                 poster="/Screenshot 2025-09-06 154256.png"
                 className="object-cover object-center brightness-100 rounded-xl shadow-lg"
               >
-                <source src="/videos/Rapheal.mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/do7woqgon/video/upload/v1771682435/Rapheal_o8nwdu.mp4" type="video/mp4" />
               </video>
             </SwiperSlide>
           </Swiper>
