@@ -39,7 +39,7 @@ export default function Tennis() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className="text-xl sm:text-3xl lg:text-4xl font-bold mb-6 bg-gradient-to-r from-emerald-500 to-green-500 text-transparent bg-clip-text leading-tight"
           >
             Ace Your Future: Agroterra Tennis
@@ -47,7 +47,7 @@ export default function Tennis() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="text-sm sm:text-base lg:text-lg mb-10 text-gray-200 leading-relaxed max-w-3xl mx-auto"
           >
             Dream of smashing serves, outsmarting opponents, and competing on global courts? At Agroterra, our tennis program transforms passion into precision with elite coaching, world-class courts, and a community built for champions. Your journey to tennis stardom starts here—ready to swing for greatness?
@@ -55,7 +55,7 @@ export default function Tennis() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
           >
             <Link
               href="/contact"
@@ -96,7 +96,7 @@ export default function Tennis() {
             breakpoints={{
               640: { slidesPerView: 2 },
             }}
-            autoplay={{ delay: 4000, disableOnInteraction: false }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
             className="mb-12"
           >
             <SwiperSlide>
@@ -149,7 +149,7 @@ export default function Tennis() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className="text-center text-lg sm:text-xl text-emerald-400"
           >
             These coaches are your key to unlocking tennis greatness. Ready to rally with the best?
@@ -234,7 +234,7 @@ export default function Tennis() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ delay: 0.4 }}
+              transition={{ delay: 0.3 }}
               className="flex flex-col md:flex-row items-center gap-8"
             >
               <div className="w-full md:w-1/2">
@@ -259,7 +259,7 @@ export default function Tennis() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-12 text-center text-lg sm:text-xl text-emerald-400"
           >
             These courts are your stage for greatness. Step in and ace your tennis journey!
@@ -390,7 +390,7 @@ export default function Tennis() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-12 text-center text-lg sm:text-xl text-emerald-400"
           >
             This is your court to conquer. Join Agroterra and make every shot count!
@@ -408,7 +408,7 @@ export default function Tennis() {
             viewport={{ once: true }}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 text-emerald-500"
           >
-            Your Tennis Destiny Awaits in Lagos
+            Your Tennis Destiny Awaits in Ogun
           </motion.h2>
           <motion.p
             variants={sectionVariants}
@@ -418,7 +418,7 @@ export default function Tennis() {
             transition={{ delay: 0.2 }}
             className={`text-lg sm:text-xl mb-10 ${toggleTheme ? "text-slate-300" : "text-slate-500"} max-w-3xl mx-auto`}
           >
-            As of August 24, 2025, Agroterra Sport Academy in Lekki, Lagos, is the hub for aspiring tennis players. With world-class coaches, top-tier facilities, and a vision for competitive excellence, this is where your tennis dreams take flight. Don’t just aim for the court—join us and aim for the stars.
+            As of August 24, 2025, Agroterra Sport Academy in Joga-Orile, Ogun State, is the hub for aspiring tennis players. With world-class coaches, top-tier facilities, and a vision for competitive excellence, this is where your tennis dreams take flight. Don&apos;t just aim for the court—join us and aim for the stars.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -428,14 +428,14 @@ export default function Tennis() {
             className="flex justify-center items-center gap-4 mb-10"
           >
             <FaMapMarkerAlt className="text-emerald-400 text-3xl" />
-            <span className={`text-lg sm:text-xl ${toggleTheme ? "text-emerald-100" : "text-emerald-400"}`}>Agroterra Sport Academy, Lekki, Lagos</span>
+            <span className={`text-lg sm:text-xl ${toggleTheme ? "text-emerald-100" : "text-emerald-400"}`}>Agroterra Sport Academy, Joga-Orile, Ogun State</span>
           </motion.div>
           <motion.div
             variants={sectionVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.6 }}
+            transition={{ delay: 0.3 }}
             className="flex justify-center gap-6 mb-10"
           >
             <a href="https://facebook.com/agroterra" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:text-emerald-300 text-3xl transition-colors"><FaFacebook /></a>
@@ -447,7 +447,7 @@ export default function Tennis() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
           >
             <Link
               href="/contact"
@@ -465,5 +465,5 @@ export default function Tennis() {
 // Animation variants
 const sectionVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
 };

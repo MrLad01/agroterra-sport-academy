@@ -48,7 +48,7 @@ export default function Events() {
 
   const pastEvents = [
     {
-      title: "2025 Summer Soccer Camp",
+      title: "WamuFat foundation Program, Annual Athletics Program",
       date: "July 21 - August 22, 2025",
       desc: "Our 2025 summer camp was a huge success, with over 200 young athletes trained by professional coaches.",
       highlight: "Awarded Best Youth Program 2025",
@@ -86,8 +86,8 @@ export default function Events() {
   // Animation variants
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-    hover: { scale: 1.05, transition: { duration: 0.3 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    hover: { scale: 1.05, transition: { duration: 0.2 } },
   };
 
   const buttonVariants = {
@@ -112,7 +112,7 @@ export default function Events() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.6 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-emerald-500 to-green-500 text-transparent bg-clip-text"
           >
             Our Events
@@ -120,7 +120,7 @@ export default function Events() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg sm:text-xl mb-8 text-gray-200"
           >
             Discover upcoming sports events and relive the excitement of our past successes.
@@ -128,7 +128,7 @@ export default function Events() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
           >
             <Link
               href="/contact"
@@ -146,7 +146,7 @@ export default function Events() {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.5 }}
             viewport={{ once: true }}
             className="text-3xl sm:text-4xl font-bold text-center mb-4 text-emerald-500"
           >
@@ -155,7 +155,7 @@ export default function Events() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
             className={`text-lg text-center mb-12 ${toggleTheme ? 'text-slate-500' : 'text-slate-600'} max-w-2xl mx-auto`}
           >
@@ -200,10 +200,10 @@ export default function Events() {
                         <FaCalendarAlt />
                         {event.date}
                       </div>
-                      <div className={`flex items-center gap-2 text-sm ${toggleTheme ? "text-slate-300" : "text-slate-500"}  mb-2`}>
+                      {/* <div className={`flex items-center gap-2 text-sm ${toggleTheme ? "text-slate-300" : "text-slate-500"}  mb-2`}>
                         <FaMapMarkerAlt />
                         {event.venue}
-                      </div>
+                      </div> */}
                       <div className={`flex items-center gap-2 text-sm ${toggleTheme ? "text-slate-300" : "text-slate-500"}  mb-4`}>
                         <FaClock />
                         {event.time}
@@ -251,7 +251,7 @@ export default function Events() {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.5 }}
             viewport={{ once: true }}
             className="text-3xl sm:text-4xl font-bold text-center mb-4 text-emerald-500"
           >
@@ -260,7 +260,7 @@ export default function Events() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
             className={`text-lg text-center mb-12 ${toggleTheme ? "text-slate-300" : "text-slate-500"} max-w-2xl mx-auto`}
           >
@@ -320,7 +320,7 @@ export default function Events() {
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5 }}
           viewport={{ once: true }}
           className="text-3xl sm:text-4xl font-bold mb-4 text-emerald-500"
         >
@@ -329,7 +329,7 @@ export default function Events() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
           className={`text-lg mb-8 ${toggleTheme ? "text-slate-300" : "text-slate-500"}  max-w-2xl mx-auto`}
         >
@@ -338,7 +338,7 @@ export default function Events() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
           viewport={{ once: true }}
         >
           <Link

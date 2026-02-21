@@ -31,7 +31,7 @@ export default function Lodgings() {
       type: "Dormitory",
       name: "Athlete's Dormitory",
       description: "A modern dormitory designed for athletes, offering shared rooms with training-focused amenities.",
-      location: "Agroterra Sport Academy Campus, Lekki",
+      location: "Agroterra Sport Academy Campus, Joga-Orile, Ogun State",
       price: "$50/night",
       rating: 4.6,
       images: [img13, img14, img15], // Interior views
@@ -47,7 +47,7 @@ export default function Lodgings() {
       type: "Resort",
       name: "Agroterra Resort",
       description: "A luxurious resort owned by Agroterra, perfect for athletes and families with premium facilities.",
-      location: "Victoria Island, Lagos",
+      location: "Agroterra Sport Academy Campus, Joga-Orile, Ogun State",
       price: "$180/night",
       rating: 4.9,
       images: [img1, img6, img7, img8, img9, img10, img11, img16], // Interior views

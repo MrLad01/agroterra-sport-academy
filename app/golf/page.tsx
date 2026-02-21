@@ -41,7 +41,7 @@ export default function Golf() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 1.2 }}
             autoPlay
             muted
             playsInline
@@ -56,7 +56,7 @@ export default function Golf() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className="text-xl sm:text-3xl lg:text-4xl font-bold mb-6 bg-gradient-to-r from-emerald-500 to-green-500 text-transparent bg-clip-text leading-tight"
           >
             Tee Off to Greatness: Agroterra Golf
@@ -64,7 +64,7 @@ export default function Golf() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="text-sm sm:text-base lg:text-lg mb-10 text-gray-200 leading-relaxed max-w-3xl mx-auto"
           >
             Dream of mastering the fairways, sinking putts, and competing on a world-class course? Since breaking ground in 2020, our 9-hole golf course at Agroterra has been crafted to elevate your game. With elite coaching and stunning facilities, your journey to golfing excellence starts here—ready to swing for the green?
@@ -72,7 +72,7 @@ export default function Golf() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
           >
             <Link
               href="/contact"
@@ -168,7 +168,7 @@ export default function Golf() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className="text-center text-lg sm:text-xl text-emerald-400"
           >
             These coaches are your path to golfing excellence. Ready to tee off with the best?
@@ -253,7 +253,7 @@ export default function Golf() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ delay: 0.4 }}
+              transition={{ delay: 0.3 }}
               className="flex flex-col md:flex-row items-center gap-8"
             >
               <div className="w-full md:w-1/2">
@@ -278,7 +278,7 @@ export default function Golf() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             className="mt-12 text-center text-lg sm:text-xl text-emerald-400"
           >
             This course is your path to golfing greatness. Step up and swing for the stars!
@@ -355,7 +355,7 @@ export default function Golf() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className="text-center text-lg sm:text-xl text-emerald-400"
           >
             Our programs are your fairway to success. Join Agroterra and aim for the top!
@@ -440,7 +440,7 @@ export default function Golf() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-12 text-center text-lg sm:text-xl text-emerald-400"
           >
             This is your course to conquer. Join Agroterra and make every shot count!
@@ -474,7 +474,7 @@ export default function Golf() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className="flex justify-center items-center gap-4 mb-10"
           >
             <FaMapMarkerAlt className="text-emerald-400 text-3xl" />
@@ -485,7 +485,7 @@ export default function Golf() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.6 }}
+            transition={{ delay: 0.5 }}
             className="flex justify-center gap-6 mb-10"
           >
             <a href="https://facebook.com/agroterra" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:text-emerald-300 text-3xl transition-colors">
@@ -505,7 +505,7 @@ export default function Golf() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
           >
             <Link
               href="/contact"
@@ -523,5 +523,5 @@ export default function Golf() {
 // Animation variants
 const sectionVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };

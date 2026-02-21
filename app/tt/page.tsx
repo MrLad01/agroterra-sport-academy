@@ -39,7 +39,7 @@ export default function TableTennis() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className="text-xl sm:text-3xl lg:text-4xl font-bold mb-6 bg-gradient-to-r from-emerald-500 to-green-500 text-transparent bg-clip-text leading-tight"
           >
             Smash Your Dreams: Agroterra Table Tennis
@@ -47,7 +47,7 @@ export default function TableTennis() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="text-sm sm:text-base lg:text-lg mb-10 text-gray-200 leading-relaxed max-w-3xl mx-auto"
           >
             Ready to master lightning-fast rallies, outspin your opponents, and dominate the table? At Agroterra, our table tennis program offers elite coaching, two ITTF-standard tables, and a dedicated junior table to spark your journey to greatness. Whether you&apos;re a beginner or aiming for the pros, start your spin to stardom with us!
@@ -55,7 +55,7 @@ export default function TableTennis() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
           >
             <Link
               href="/contact"
@@ -87,7 +87,7 @@ export default function TableTennis() {
             transition={{ delay: 0.2 }}
             className={`text-lg sm:text-xl text-center mb-12 max-w-3xl mx-auto ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}
           >
-            Our coaches are seasoned players with a passion for turning raw talent into table tennis mastery. With personalized training, technical expertise, and mental conditioning, they’ll guide you to perfect your serves, smashes, and strategies, setting you on the path to competitive success.
+            Our coaches are seasoned players with a passion for turning raw talent into table tennis mastery. With personalized training, technical expertise, and mental conditioning, they&apos;ll guide you to perfect your serves, smashes, and strategies, setting you on the path to competitive success.
           </motion.p>
           <Swiper
             modules={[Pagination, Navigation, Autoplay]}
@@ -112,7 +112,7 @@ export default function TableTennis() {
                 />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? "text-emerald-100" : "text-emerald-500"}`}>Chidi Okonkwo - Head Coach</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  A former national team player with 15 years of competitive experience, Chidi’s coaching focuses on precision and agility. &quot;Every spin tells a story,&quot; he says, crafting training plans to elevate your game for local and regional tournaments.
+                  A former national team player with 15 years of competitive experience, Chidi&apos;s coaching focuses on precision and agility. &quot;Every spin tells a story,&quot; he says, crafting training plans to elevate your game for local and regional tournaments.
                 </p>
               </div>
             </SwiperSlide>
@@ -151,7 +151,7 @@ export default function TableTennis() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className="text-center text-lg sm:text-xl text-emerald-400"
           >
             These coaches are your key to table tennis mastery. Ready to smash your way to the top?
@@ -227,7 +227,7 @@ export default function TableTennis() {
                 <FaUsers className="text-emerald-400 text-4xl mb-4" />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? "text-emerald-100" : "text-emerald-500"}`}>Dedicated Junior Table</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  Introduced August 2025, our junior table is tailored for young players, fostering early skill development. It’s the perfect space for kids to learn the game and grow into future champions.
+                  Introduced August 2025, our junior table is tailored for young players, fostering early skill development. It&apos;s the perfect space for kids to learn the game and grow into future champions.
                 </p>
               </div>
             </motion.div>
@@ -236,7 +236,7 @@ export default function TableTennis() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ delay: 0.4 }}
+              transition={{ delay: 0.3 }}
               className="flex flex-col md:flex-row items-center gap-8"
             >
               <div className="w-full md:w-1/2">
@@ -261,7 +261,7 @@ export default function TableTennis() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-12 text-center text-lg sm:text-xl text-emerald-400"
           >
             These tables are your arena for greatness. Step up and spin your way to victory!
@@ -329,7 +329,7 @@ export default function TableTennis() {
                 />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? "text-emerald-100" : "text-emerald-500"}`}>Competitive Training Camp</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  Starting in 2026, our camps offer intensive training for advanced players. With match simulations and performance analysis, you’ll refine your skills and prepare for regional and national competitions.
+                  Starting in 2026, our camps offer intensive training for advanced players. With match simulations and performance analysis, you&apos;ll refine your skills and prepare for regional and national competitions.
                 </p>
               </div>
             </SwiperSlide>
@@ -338,7 +338,7 @@ export default function TableTennis() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className="text-center text-lg sm:text-xl text-emerald-400"
           >
             Our programs are your stepping stones to table tennis excellence. Join Agroterra and smash your future!
@@ -396,7 +396,7 @@ export default function TableTennis() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-12 text-center text-lg sm:text-xl text-emerald-400"
           >
             This is your table to conquer. Join Agroterra and make every shot count!
@@ -414,7 +414,7 @@ export default function TableTennis() {
             viewport={{ once: true }}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 text-emerald-500"
           >
-            Your Table Tennis Destiny Awaits in Lagos
+            Your Table Tennis Destiny Awaits in Ogun
           </motion.h2>
           <motion.p
             variants={sectionVariants}
@@ -424,24 +424,24 @@ export default function TableTennis() {
             transition={{ delay: 0.2 }}
             className={`text-lg sm:text-xl mb-10 ${toggleTheme ? "text-slate-300" : "text-slate-500"} max-w-3xl mx-auto`}
           >
-            As of August 24, 2025, Agroterra Sport Academy in Lekki, Lagos, is the hub for aspiring table tennis players. With expert coaches, two ITTF-standard tables, a dedicated junior table, and a vision for competitive excellence, this is where your journey to table tennis stardom begins. Don’t just dream of winning—join us and make it happen.
+            As of August 24, 2025, Agroterra Sport Academy in Joga-Orile, Ogun State, is the hub for aspiring table tennis players. With expert coaches, two ITTF-standard tables, a dedicated junior table, and a vision for competitive excellence, this is where your journey to table tennis stardom begins. Don&apos;t just dream of winning—join us and make it happen.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className="flex justify-center items-center gap-4 mb-10"
           >
             <FaMapMarkerAlt className="text-emerald-400 text-3xl" />
-            <span className={`text-lg sm:text-xl ${toggleTheme ? "text-emerald-100" : "text-emerald-400"}`}>Agroterra Sport Academy, Lekki, Lagos</span>
+            <span className={`text-lg sm:text-xl ${toggleTheme ? "text-emerald-100" : "text-emerald-400"}`}>Agroterra Sport Academy, Joga-Orile, Ogun State</span>
           </motion.div>
           <motion.div
             variants={sectionVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.6 }}
+            transition={{ delay: 0.4 }}
             className="flex justify-center gap-6 mb-10"
           >
             <a href="https://facebook.com/agroterra" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:text-emerald-300 text-3xl transition-colors">
@@ -461,7 +461,7 @@ export default function TableTennis() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
           >
             <Link
               href="/contact"
@@ -479,5 +479,5 @@ export default function TableTennis() {
 // Animation variants
 const sectionVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };

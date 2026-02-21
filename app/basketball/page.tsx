@@ -44,7 +44,7 @@ export default function Basketball() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className="text-xl sm:text-3xl lg:text-4xl font-bold mb-6 bg-gradient-to-r from-emerald-500 to-green-500 text-transparent bg-clip-text leading-tight"
           >
             Rise to Greatness: Agroterra Basketball
@@ -52,15 +52,15 @@ export default function Basketball() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="text-sm sm:text-base lg:text-lg mb-10 text-gray-200 leading-relaxed max-w-3xl mx-auto"
           >
-            Launched in August 2025, Agroterra’s basketball program is just the beginning of a new era in hoops excellence. With elite coaching, cutting-edge facilities, and a vision to build champions, we’re here to help you slam-dunk your dreams. Ready to be part of our founding legacy and soar to new heights?
+            Launched in August 2025, Agroterra&apos;s basketball program is just the beginning of a new era in hoops excellence. With elite coaching, cutting-edge facilities, and a vision to build champions, we&apos;re here to help you slam-dunk your dreams. Ready to be part of our founding legacy and soar to new heights?
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
           >
             <Link
               href="/contact"
@@ -92,7 +92,7 @@ export default function Basketball() {
             transition={{ delay: 0.2 }}
             className={`text-lg sm:text-xl text-center mb-12 max-w-3xl mx-auto ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}
           >
-            Our basketball program is new, but our coaches are seasoned veterans with a passion for shaping the next generation of hoop stars. With expertise in strategy, skill development, and mental toughness, they’re here to lay the foundation for your rise to greatness.
+            Our basketball program is new, but our coaches are seasoned veterans with a passion for shaping the next generation of hoop stars. With expertise in strategy, skill development, and mental toughness, they&apos;re here to lay the foundation for your rise to greatness.
           </motion.p>
           <Swiper
             modules={[Pagination, Navigation, Autoplay]}
@@ -154,7 +154,7 @@ export default function Basketball() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
             className="text-center text-lg sm:text-xl text-emerald-400"
           >
             Our coaches are laying the groundwork for a basketball revolution. Be part of the founding team and rise with us!
@@ -264,7 +264,7 @@ export default function Basketball() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             className="mt-12 text-center text-lg sm:text-xl text-emerald-400"
           >
             Our facilities are the foundation of our basketball revolution. Join us and build your future on the court!
@@ -282,7 +282,7 @@ export default function Basketball() {
             viewport={{ once: true }}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-12 text-emerald-500"
           >
-            Our Vision: Building Basketball’s Future
+            Our Vision: Building Basketball&apos;s Future
           </motion.h2>
           <motion.p
             variants={sectionVariants}
@@ -292,7 +292,7 @@ export default function Basketball() {
             transition={{ delay: 0.2 }}
             className={`text-lg sm:text-xl text-center mb-12 max-w-3xl mx-auto ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}
           >
-            Agroterra’s basketball program is just starting, but our vision is bold: to create a powerhouse that produces national and international stars. Through elite training, community-building, and future scouting initiatives, we’re laying the groundwork for a legacy of champions. Be among the first to shape this exciting journey.
+            Agroterra&apos;s basketball program is just starting, but our vision is bold: to create a powerhouse that produces national and international stars. Through elite training, community-building, and future scouting initiatives, we&apos;re laying the groundwork for a legacy of champions. Be among the first to shape this exciting journey.
           </motion.p>
           <Swiper
             modules={[Pagination, Navigation, Autoplay]}
@@ -339,7 +339,7 @@ export default function Basketball() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
             className="text-center text-lg sm:text-xl text-emerald-400"
           >
             Our basketball journey is just beginning. Join us to shape the future of hoops in Nigeria!
@@ -413,7 +413,7 @@ export default function Basketball() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
             className="mt-12 text-center text-lg sm:text-xl text-emerald-400"
           >
             This is the start of something epic. Join Agroterra and be a pioneer in our basketball legacy!
@@ -431,7 +431,7 @@ export default function Basketball() {
             viewport={{ once: true }}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 text-emerald-500"
           >
-            Your Basketball Journey Begins in Lagos
+            Your Basketball Journey Begins in Ogun
           </motion.h2>
           <motion.p
             variants={sectionVariants}
@@ -441,24 +441,24 @@ export default function Basketball() {
             transition={{ delay: 0.2 }}
             className={`text-lg sm:text-xl mb-10 ${toggleTheme ? "text-slate-300" : "text-slate-500"} max-w-3xl mx-auto`}
           >
-            As of August 24, 2025, Agroterra Sport Academy in Lekki, Lagos, is launching its basketball program with a vision to redefine hoops in Nigeria. With elite coaches, state-of-the-art facilities, and a commitment to building champions, this is your chance to be part of a groundbreaking movement. Don’t miss out—join us and shape the future of basketball.
+            As of August 24, 2025, Agroterra Sport Academy in Joga-Orile, Ogun State, is launching its basketball program with a vision to redefine hoops in Nigeria. With elite coaches, state-of-the-art facilities, and a commitment to building champions, this is your chance to be part of a groundbreaking movement. Don&apos;t miss out—join us and shape the future of basketball.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
             className="flex justify-center items-center gap-4 mb-10"
           >
             <FaMapMarkerAlt className="text-emerald-400 text-3xl" />
-            <span className={`text-lg sm:text-xl ${toggleTheme ? "text-emerald-100" : "text-emerald-400"}`}>Agroterra Sport Academy, Lekki, Lagos</span>
+            <span className={`text-lg sm:text-xl ${toggleTheme ? "text-emerald-100" : "text-emerald-400"}`}>Agroterra Sport Academy, Joga-Orile, Ogun State</span>
           </motion.div>
           <motion.div
             variants={sectionVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.6 }}
+            transition={{ delay: 0.5 }}
             className="flex justify-center gap-6 mb-10"
           >
             <a href="https://facebook.com/agroterra" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:text-emerald-300 text-3xl transition-colors"><FaFacebook /></a>
@@ -470,7 +470,7 @@ export default function Basketball() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
           >
             <Link
               href="/contact"
@@ -488,5 +488,5 @@ export default function Basketball() {
 // Animation variants
 const sectionVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };
