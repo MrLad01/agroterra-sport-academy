@@ -234,9 +234,8 @@ export default function Football() {
                   height={300}
                   poster="/Screenshot 2025-09-06 154256.png"
                   className="object-cover object-center brightness-100 rounded-xl shadow-lg"
-                >
+                />
                   {/* <source src="/videos/pitch-1-1.mp4" type="video/mp4" /> */}
-                </video>
               
 
               </div>
