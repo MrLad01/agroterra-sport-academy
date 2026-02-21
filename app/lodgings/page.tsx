@@ -274,7 +274,7 @@ export default function Lodgings() {
                     </div>
                   </div>
                   <Link
-                    href={`/lodgings/${lodging.id}`}
+                    href={`https://agroproject2.vercel.app/reservation`}
                     className="mt-6 inline-flex items-center gap-2 text-emerald-500 font-semibold hover:text-emerald-400 transition-colors duration-300"
                   >
                     View Details <FaChevronRight className="text-xs" />
