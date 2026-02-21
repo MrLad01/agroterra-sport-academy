@@ -286,7 +286,7 @@ export default function Athletics() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-center text-lg sm:text-xl text-emerald-400"
           >
-            These visionaries don’t just coach—they ignite your fire. Ready to train with the best and become the best?
+            These visionaries don&apos;t just coach—they ignite your fire. Ready to train with the best and become the best?
           </motion.p>
         </div>
       </section>
@@ -311,7 +311,7 @@ export default function Athletics() {
             transition={{ delay: 0.1 }}
             className={`text-lg sm:text-xl text-center mb-12 max-w-3xl mx-auto ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}
           >
-            Step into a world where every detail is crafted for your success. Our facilities aren’t just state-of-the-art—they’re the crucible where champions are forged. From tracks that have hosted record-breakers to recovery suites that keep you at your peak, Agroterra is your unfair advantage in the race to greatness.
+            Step into a world where every detail is crafted for your success. Our facilities aren&apos;t just state-of-the-art—they&apos;re the crucible where champions are forged. From tracks that have hosted record-breakers to recovery suites that keep you at your peak, Agroterra is your unfair advantage in the race to greatness.
           </motion.p>
           <div className="space-y-16">
             <motion.div
@@ -334,7 +334,7 @@ export default function Athletics() {
                 <FaRunning className="text-emerald-400 text-4xl mb-4" />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Olympic-Standard Track</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  Unveiled August 10, 2024, our 400m synthetic track is engineered for speed and safety. With pro-grade lighting and advanced surfaces, it’s where national records are shattered. Feel the pulse of champions beneath your feet and sprint toward your destiny.
+                  Unveiled August 10, 2024, our 400m synthetic track is engineered for speed and safety. With pro-grade lighting and advanced surfaces, it&apos;s where national records are shattered. Feel the pulse of champions beneath your feet and sprint toward your destiny.
                 </p>
               </div>
             </motion.div>
@@ -384,7 +384,7 @@ export default function Athletics() {
                 <FaTrophy className="text-emerald-400 text-4xl mb-4" />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Advanced Recovery Center</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  Launched July 15, 2025, our recovery center offers cryotherapy, hydrotherapy, and expert physiotherapy. It’s your sanctuary to rebound stronger and stay in peak form. Recover like a pro and keep pushing the boundaries of what’s possible.
+                  Launched July 15, 2025, our recovery center offers cryotherapy, hydrotherapy, and expert physiotherapy. It&apos;s your sanctuary to rebound stronger and stay in peak form. Recover like a pro and keep pushing the boundaries of what&apos;s possible.
                 </p>
               </div>
             </motion.div>
@@ -396,7 +396,7 @@ export default function Athletics() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="mt-12 text-center text-lg sm:text-xl text-emerald-400"
           >
-            These aren’t just facilities—they’re your gateway to immortality. Step in and claim your victory!
+            These aren&apos;t just facilities—they&apos;re your gateway to immortality. Step in and claim your victory!
           </motion.p>
         </div>
       </section>
@@ -421,7 +421,7 @@ export default function Athletics() {
             transition={{ delay: 0.2 }}
             className={`text-lg sm:text-xl text-center mb-12 max-w-3xl mx-auto ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}
           >
-            Our athletes began as dreamers, just like you, fueled by ambition and nurtured by Agroterra’s elite program. Now, they’re national champions, global contenders, and Olympic hopefuls. Their journeys prove that with our support, your potential is limitless. Will you be our next legend?
+            Our athletes began as dreamers, just like you, fueled by ambition and nurtured by Agroterra&apos;s elite program. Now, they&apos;re national champions, global contenders, and Olympic hopefuls. Their journeys prove that with our support, your potential is limitless. Will you be our next legend?
           </motion.p>
           <Swiper
           modules={[Pagination, Navigation, Autoplay]}
@@ -494,7 +494,7 @@ export default function Athletics() {
             transition={{ delay: 0.2 }}
             className={`text-lg sm:text-xl text-center mb-12 max-w-3xl mx-auto ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}
           >
-            Every medal, every record, every roar from the crowd tells the story of Agroterra’s relentless pursuit of excellence. Our athletes have conquered national titles, stunned continental stages, and set their sights on the Olympics. These victories are your invitation to join a legacy of greatness and write your own chapter of glory.
+            Every medal, every record, every roar from the crowd tells the story of Agroterra&apos;s relentless pursuit of excellence. Our athletes have conquered national titles, stunned continental stages, and set their sights on the Olympics. These victories are your invitation to join a legacy of greatness and write your own chapter of glory.
           </motion.p>
           <div className="space-y-16">
             <motion.div
@@ -517,7 +517,7 @@ export default function Athletics() {
                 <FaTrophy className="text-emerald-400 text-4xl mb-4" />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>National Relay Champions 2024</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  On August 20, 2024, our relay team blazed to a historic 3:12.50, clinching the national title with sheer heart and teamwork. This wasn’t just a win—it was a testament to what’s possible when passion meets precision. Join us and add your name to this legacy.
+                  On August 20, 2024, our relay team blazed to a historic 3:12.50, clinching the national title with sheer heart and teamwork. This wasn&apos;t just a win—it was a testament to what&apos;s possible when passion meets precision. Join us and add your name to this legacy.
                 </p>
               </div>
             </motion.div>
@@ -542,7 +542,7 @@ export default function Athletics() {
                 <FaUsers className="text-emerald-400 text-4xl mb-4" />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Five National Medalists</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  In two years, we’ve produced five national medalists and two African Championship qualifiers. Each medal reflects our commitment to unlocking your potential. Your podium awaits—step up and claim it with Agroterra.
+                  In two years, we&apos;ve produced five national medalists and two African Championship qualifiers. Each medal reflects our commitment to unlocking your potential. Your podium awaits—step up and claim it with Agroterra.
                 </p>
               </div>
             </motion.div>
@@ -567,7 +567,7 @@ export default function Athletics() {
                 <FaRunning className="text-emerald-400 text-4xl mb-4" />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Agroterra Invitational 2025</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  On August 15, 2025, our Invitational Meet drew 200+ elite athletes, showcasing our world-class facilities. This wasn’t just an event—it was a launchpad for careers. Compete here and let your journey to global stardom begin.
+                  On August 15, 2025, our Invitational Meet drew 200+ elite athletes, showcasing our world-class facilities. This wasn&apos;t just an event—it was a launchpad for careers. Compete here and let your journey to global stardom begin.
                 </p>
               </div>
             </motion.div>
@@ -604,7 +604,7 @@ export default function Athletics() {
             transition={{ delay: 0.2 }}
             className={`text-lg sm:text-xl text-center mb-12 max-w-3xl mx-auto ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}
           >
-            Every moment at Agroterra captures the thrill of ambition, the sweat of dedication, and the joy of triumph. Our gallery showcases the energy of athletes chasing their dreams. This isn’t just a training ground—it’s where legends are born. See yourself in this story?
+            Every moment at Agroterra captures the thrill of ambition, the sweat of dedication, and the joy of triumph. Our gallery showcases the energy of athletes chasing their dreams. This isn&apos;t just a training ground—it&apos;s where legends are born. See yourself in this story?
           </motion.p>
           <Swiper
             modules={[Pagination, Navigation, Autoplay]}

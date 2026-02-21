@@ -226,6 +226,7 @@ export default function Football() {
               <div className="w-full md:w-1/2">
                 <video
                   autoPlay
+                  src={`/videos/pitch-1-1.mp4`}
                   loop
                   muted
                   playsInline
@@ -234,8 +235,9 @@ export default function Football() {
                   poster="/Screenshot 2025-09-06 154256.png"
                   className="object-cover object-center brightness-100 rounded-xl shadow-lg"
                 >
-                  <source src="/videos/pitch-1-1.mp4" type="video/mp4" />
+                  {/* <source src="/videos/pitch-1-1.mp4" type="video/mp4" /> */}
                 </video>
+              
 
               </div>
               <div className="w-full md:w-1/2">
