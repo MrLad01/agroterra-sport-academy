@@ -575,7 +575,7 @@ export default function Home() {
                         </div>
                       </div>
                       <motion.button
-                        className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm mt-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white shadow-md hover:shadow-lg group/btn"
+                        className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm mt-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white shadow-md cursor-pointer hover:shadow-lg group/btn"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         onClick={() => redirect('/contact')}
