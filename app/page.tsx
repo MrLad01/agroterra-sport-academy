@@ -24,6 +24,9 @@ import { useTheme } from './context/ThemeContext'
 export default function Home() {
   const { toggleTheme } = useTheme();
   const [currentSlide, setCurrentSlide] = useState(0)
+  const redirect = (url: string) => {
+    window.location.href = url;
+  }
 
   const containerRef = useRef(null)
   // const { scrollYProgress } = useScroll({
@@ -575,6 +578,7 @@ export default function Home() {
                         className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm mt-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white shadow-md hover:shadow-lg group/btn"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
+                        onClick={() => redirect('/contact')}
                       >
                         <span>Enroll Now</span>
                         <FaChevronRight className="transform group-hover/btn:translate-x-1 transition-transform duration-300" />
