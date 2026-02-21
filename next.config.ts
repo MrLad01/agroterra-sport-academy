@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 
+const withVideos = require('next-videos');
+
 const nextConfig: NextConfig = {
   turbopack: {
     rules: {
@@ -11,4 +13,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+export default withVideos(nextConfig);
