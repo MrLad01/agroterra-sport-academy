@@ -104,7 +104,7 @@ export default function Golf() {
             transition={{ delay: 0.2 }}
             className={`text-lg sm:text-xl text-center mb-12 max-w-3xl mx-auto ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}
           >
-            Our coaches are seasoned professionals with a passion for refining your swing, strategy, and mental game. With personalized instruction and years of experience, they’ll guide you to master the 9-hole course and prepare for competitive success.
+            Our coaches are seasoned professionals with a passion for refining your swing, strategy, and mental game. With personalized instruction and years of experience, they&apos;ll guide you to master the 9-hole course and prepare for competitive success.
           </motion.p>
           <Swiper
             modules={[Pagination, Navigation, Autoplay]}
@@ -129,7 +129,7 @@ export default function Golf() {
                 />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? "text-emerald-100" : "text-emerald-500"}`}>Ifeanyi Okafor - Head Coach</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  A former pro with 10 years on regional tours, Ifeanyi’s coaching hones your swing and course strategy. &quot;Golf is precision and patience,&quot; he says, crafting plans to elevate your game on our 9-hole course.
+                  A former pro with 10 years on regional tours, Ifeanyi&apos;s coaching hones your swing and course strategy. &quot;Golf is precision and patience,&quot; he says, crafting plans to elevate your game on our 9-hole course.
                 </p>
               </div>
             </SwiperSlide>
@@ -144,7 +144,7 @@ export default function Golf() {
                 />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? "text-emerald-100" : "text-emerald-500"}`}>Ada Nwosu - Short Game Coach</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  A putting and chipping specialist, Ada refines your finesse around the greens. &quot;The short game wins tournaments,&quot; she believes, teaching precision to sink putts and master our course’s challenges.
+                  A putting and chipping specialist, Ada refines your finesse around the greens. &quot;The short game wins tournaments,&quot; she believes, teaching precision to sink putts and master our course&apos;s challenges.
                 </p>
               </div>
             </SwiperSlide>
@@ -244,7 +244,7 @@ export default function Golf() {
                 <FaUsers className="text-emerald-400 text-4xl mb-4" />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? "text-emerald-100" : "text-emerald-500"}`}>Practice Facilities</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  Opened in 2024, our practice facilities include a driving range, putting greens, and chipping areas. Equipped with the latest tech, they’re designed to sharpen every aspect of your game for tournament readiness.
+                  Opened in 2024, our practice facilities include a driving range, putting greens, and chipping areas. Equipped with the latest tech, they&apos;re designed to sharpen every aspect of your game for tournament readiness.
                 </p>
               </div>
             </motion.div>
@@ -346,7 +346,7 @@ export default function Golf() {
                 />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? "text-emerald-100" : "text-emerald-500"}`}>Elite Golf Camps</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  Starting in 2025, our intensive camps offer advanced training for competitive players. With course simulations and performance analytics, you’ll refine your skills for regional and national tournaments.
+                  Starting in 2025, our intensive camps offer advanced training for competitive players. With course simulations and performance analytics, you&apos;ll refine your skills for regional and national tournaments.
                 </p>
               </div>
             </SwiperSlide>
@@ -458,7 +458,7 @@ export default function Golf() {
             viewport={{ once: true }}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 text-emerald-500"
           >
-            Your Golf Destiny Awaits in Lagos
+            Your Golf Destiny Awaits in Ogun
           </motion.h2>
           <motion.p
             variants={sectionVariants}
@@ -468,7 +468,7 @@ export default function Golf() {
             transition={{ delay: 0.2 }}
             className={`text-lg sm:text-xl mb-10 ${toggleTheme ? "text-slate-300" : "text-slate-500"} max-w-3xl mx-auto`}
           >
-            As of August 24, 2025, Agroterra Sport Academy in Lekki, Lagos, is home to a stunning 9-hole golf course, built since 2020. With expert coaches, world-class facilities, and a vision for golfing excellence, this is where your journey to the leaderboard begins. Don’t just dream of the green—join us and make it happen.
+            As of August 24, 2025, Agroterra Sport Academy in Joga-Orile, Ogun State, is home to a stunning 9-hole golf course, built since 2020. With expert coaches, world-class facilities, and a vision for golfing excellence, this is where your journey to the leaderboard begins. Don&apos;t just dream of the green—join us and make it happen.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -478,7 +478,7 @@ export default function Golf() {
             className="flex justify-center items-center gap-4 mb-10"
           >
             <FaMapMarkerAlt className="text-emerald-400 text-3xl" />
-            <span className={`text-lg sm:text-xl ${toggleTheme ? "text-emerald-100" : "text-emerald-400"}`}>Agroterra Sport Academy, Lekki, Lagos</span>
+            <span className={`text-lg sm:text-xl ${toggleTheme ? "text-emerald-100" : "text-emerald-400"}`}>Agroterra Sport Academy, Joga-Orile, Ogun State</span>
           </motion.div>
           <motion.div
             variants={sectionVariants}
