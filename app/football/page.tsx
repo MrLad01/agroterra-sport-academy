@@ -23,7 +23,7 @@ export default function Football() {
   const [currentVideo, setCurrentVideo] = useState(0);
 
   const videos = [
-    '/videos/fball-1-1.mp4',
+    '/videos/Fball-1-1.mp4',
     '/videos/fball-2-1.mp4',
     '/videos/pitch-1-1.mp4'
   ];
