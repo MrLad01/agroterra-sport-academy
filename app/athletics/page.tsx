@@ -12,6 +12,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import heroImage from "@/public/Slider-Lagos-Tigers-Basketball-Launch-2024-.jpg"; // Single image for all sections
 import ronkeImage from '@/public/ronke.jpg'
+import hamidImage from '@/public/hamid.jpeg'
 import gym1 from '@/public/Gym1.jpg'
 import gym3 from '@/public/Gym2.jpg'
 import track from '@/public/Screenshot 2025-09-06 161536.png'
@@ -66,14 +67,14 @@ export default function Athletics() {
     },
     {
       id: 2,
-      name: "Kwame Adebayo",
-      title: "Long Jump Prodigy",
-      achievement: "African Silver 2025 | 8.1m Leap",
+      name: "Hamid Sambo",
+      title: "1500m Champion",
+      achievement: "National Champion 2024 | 3:51.49",
       quote: "From local tracks to global podiums, Agroterra made me soar. Take the leap and join the revolution!",
-      image: heroImage.src,
+      image: hamidImage.src,
       details: {
-        age: 20,
-        specialty: "Long Jump",
+        age: 25,
+        specialty: "1500m Middle Distance",
         achievements: [
           "African Silver Medal 2025",
           "Personal Best: 8.1 meters",
