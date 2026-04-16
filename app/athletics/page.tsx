@@ -12,6 +12,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import heroImage from "@/public/Slider-Lagos-Tigers-Basketball-Launch-2024-.jpg"; // Single image for all sections
 import ronkeImage from '@/public/ronke.jpg'
+import hamidImage from '@/public/hamid.jpeg'
 import gym1 from '@/public/Gym1.jpg'
 import gym3 from '@/public/Gym2.jpg'
 import track from '@/public/Screenshot 2025-09-06 161536.png'
@@ -66,14 +67,14 @@ export default function Athletics() {
     },
     {
       id: 2,
-      name: "Kwame Adebayo",
-      title: "Long Jump Prodigy",
-      achievement: "African Silver 2025 | 8.1m Leap",
+      name: "Hamid Sambo",
+      title: "1500m Champion",
+      achievement: "National Champion 2024 | 3:51.49",
       quote: "From local tracks to global podiums, Agroterra made me soar. Take the leap and join the revolution!",
-      image: heroImage.src,
+      image: hamidImage.src,
       details: {
-        age: 20,
-        specialty: "Long Jump",
+        age: 25,
+        specialty: "1500m Middle Distance",
         achievements: [
           "African Silver Medal 2025",
           "Personal Best: 8.1 meters",
@@ -145,7 +146,7 @@ export default function Athletics() {
           poster="/Screenshot 2025-09-06 161536.png"
           className="absolute top-0 left-0 w-full h-full object-cover object-center brightness-100 scale-105"
         >
-          <source src="/videos/athletics-1.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/do7woqgon/video/upload/v1771681247/athletics-1_xilwy7.mp4" type="video/mp4" />
         </video>
 
         {/* Keep your existing overlay */}
@@ -156,7 +157,7 @@ export default function Athletics() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-xl sm:text-3xl lg:text-4xl font-bold mb-6 bg-gradient-to-r from-emerald-500 to-green-500 text-transparent bg-clip-text leading-tight"
           >
             Unleash Your Epic: Agroterra Athletics
@@ -164,7 +165,7 @@ export default function Athletics() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="text-sm sm:text-base lg:text-lg mb-10 text-gray-200 leading-relaxed max-w-3xl mx-auto"
           >
             Picture yourself breaking records, standing on Olympic podiums, and inspiring millions. At Agroterra, we transform passion into power with elite coaching, world-class facilities, and a community that thrives on victory. Your journey to global stardom begins here—ready to make history?
@@ -172,7 +173,7 @@ export default function Athletics() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
           >
             <Link
               href="/contact"
@@ -204,7 +205,7 @@ export default function Athletics() {
             transition={{ delay: 0.2 }}
             className={`text-lg sm:text-xl text-center mb-12 max-w-3xl mx-auto ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}
           >
-            Our coaches are more than trainers—they’re legends who’ve conquered global stages and now dedicate their lives to sculpting your success. With personalized strategies, cutting-edge techniques, and an unwavering belief in your potential, they’ll guide you to surpass your dreams and etch your name in athletic history.
+            Our coaches are more than trainers—they&apos;re legends who&apos;ve conquered global stages and now dedicate their lives to sculpting your success. With personalized strategies, cutting-edge techniques, and an unwavering belief in your potential, they&apos;ll guide you to surpass your dreams and etch your name in athletic history.
           </motion.p>
           <Swiper
             modules={[Pagination, Navigation, Autoplay]}
@@ -244,7 +245,7 @@ export default function Athletics() {
                 />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Mike Johnson - Sprint Coach</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  A 10.1s 100m national sprinter, Mike’s coaching fuses biomechanics with mental toughness. &quot;Speed is a mindset,&quot; he insists, turning raw talent into Olympic hopefuls. Join him to outrun your doubts and dominate the track.
+                  A 10.1s 100m national sprinter, Mike&apos;s coaching fuses biomechanics with mental toughness. &quot;Speed is a mindset,&quot; he insists, turning raw talent into Olympic hopefuls. Join him to outrun your doubts and dominate the track.
                 </p>
               </div>
             </SwiperSlide>
@@ -283,10 +284,10 @@ export default function Athletics() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className="text-center text-lg sm:text-xl text-emerald-400"
           >
-            These visionaries don’t just coach—they ignite your fire. Ready to train with the best and become the best?
+            These visionaries don&apos;t just coach—they ignite your fire. Ready to train with the best and become the best?
           </motion.p>
         </div>
       </section>
@@ -308,10 +309,10 @@ export default function Athletics() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.1 }}
             className={`text-lg sm:text-xl text-center mb-12 max-w-3xl mx-auto ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}
           >
-            Step into a world where every detail is crafted for your success. Our facilities aren’t just state-of-the-art—they’re the crucible where champions are forged. From tracks that have hosted record-breakers to recovery suites that keep you at your peak, Agroterra is your unfair advantage in the race to greatness.
+            Step into a world where every detail is crafted for your success. Our facilities aren&apos;t just state-of-the-art—they&apos;re the crucible where champions are forged. From tracks that have hosted record-breakers to recovery suites that keep you at your peak, Agroterra is your unfair advantage in the race to greatness.
           </motion.p>
           <div className="space-y-16">
             <motion.div
@@ -334,7 +335,7 @@ export default function Athletics() {
                 <FaRunning className="text-emerald-400 text-4xl mb-4" />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Olympic-Standard Track</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  Unveiled August 10, 2024, our 400m synthetic track is engineered for speed and safety. With pro-grade lighting and advanced surfaces, it’s where national records are shattered. Feel the pulse of champions beneath your feet and sprint toward your destiny.
+                  Unveiled August 10, 2024, our 400m synthetic track is engineered for speed and safety. With pro-grade lighting and advanced surfaces, it&apos;s where national records are shattered. Feel the pulse of champions beneath your feet and sprint toward your destiny.
                 </p>
               </div>
             </motion.div>
@@ -368,7 +369,7 @@ export default function Athletics() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ delay: 0.4 }}
+              transition={{ delay: 0.2 }}
               className="flex flex-col md:flex-row items-center gap-8"
             >
               <div className="w-full md:w-1/2">
@@ -384,7 +385,7 @@ export default function Athletics() {
                 <FaTrophy className="text-emerald-400 text-4xl mb-4" />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Advanced Recovery Center</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  Launched July 15, 2025, our recovery center offers cryotherapy, hydrotherapy, and expert physiotherapy. It’s your sanctuary to rebound stronger and stay in peak form. Recover like a pro and keep pushing the boundaries of what’s possible.
+                  Launched July 15, 2025, our recovery center offers cryotherapy, hydrotherapy, and expert physiotherapy. It&apos;s your sanctuary to rebound stronger and stay in peak form. Recover like a pro and keep pushing the boundaries of what&apos;s possible.
                 </p>
               </div>
             </motion.div>
@@ -393,10 +394,10 @@ export default function Athletics() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
             className="mt-12 text-center text-lg sm:text-xl text-emerald-400"
           >
-            These aren’t just facilities—they’re your gateway to immortality. Step in and claim your victory!
+            These aren&apos;t just facilities—they&apos;re your gateway to immortality. Step in and claim your victory!
           </motion.p>
         </div>
       </section>
@@ -421,7 +422,7 @@ export default function Athletics() {
             transition={{ delay: 0.2 }}
             className={`text-lg sm:text-xl text-center mb-12 max-w-3xl mx-auto ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}
           >
-            Our athletes began as dreamers, just like you, fueled by ambition and nurtured by Agroterra’s elite program. Now, they’re national champions, global contenders, and Olympic hopefuls. Their journeys prove that with our support, your potential is limitless. Will you be our next legend?
+            Our athletes began as dreamers, just like you, fueled by ambition and nurtured by Agroterra&apos;s elite program. Now, they&apos;re national champions, global contenders, and Olympic hopefuls. Their journeys prove that with our support, your potential is limitless. Will you be our next legend?
           </motion.p>
           <Swiper
           modules={[Pagination, Navigation, Autoplay]}
@@ -466,7 +467,7 @@ export default function Athletics() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className="text-center text-lg sm:text-xl text-emerald-400"
           >
             These stars were once dreamers like you. Join Agroterra and carve your path to greatness!
@@ -494,7 +495,7 @@ export default function Athletics() {
             transition={{ delay: 0.2 }}
             className={`text-lg sm:text-xl text-center mb-12 max-w-3xl mx-auto ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}
           >
-            Every medal, every record, every roar from the crowd tells the story of Agroterra’s relentless pursuit of excellence. Our athletes have conquered national titles, stunned continental stages, and set their sights on the Olympics. These victories are your invitation to join a legacy of greatness and write your own chapter of glory.
+            Every medal, every record, every roar from the crowd tells the story of Agroterra&apos;s relentless pursuit of excellence. Our athletes have conquered national titles, stunned continental stages, and set their sights on the Olympics. These victories are your invitation to join a legacy of greatness and write your own chapter of glory.
           </motion.p>
           <div className="space-y-16">
             <motion.div
@@ -517,7 +518,7 @@ export default function Athletics() {
                 <FaTrophy className="text-emerald-400 text-4xl mb-4" />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>National Relay Champions 2024</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  On August 20, 2024, our relay team blazed to a historic 3:12.50, clinching the national title with sheer heart and teamwork. This wasn’t just a win—it was a testament to what’s possible when passion meets precision. Join us and add your name to this legacy.
+                  On August 20, 2024, our relay team blazed to a historic 3:12.50, clinching the national title with sheer heart and teamwork. This wasn&apos;t just a win—it was a testament to what&apos;s possible when passion meets precision. Join us and add your name to this legacy.
                 </p>
               </div>
             </motion.div>
@@ -542,7 +543,7 @@ export default function Athletics() {
                 <FaUsers className="text-emerald-400 text-4xl mb-4" />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Five National Medalists</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  In two years, we’ve produced five national medalists and two African Championship qualifiers. Each medal reflects our commitment to unlocking your potential. Your podium awaits—step up and claim it with Agroterra.
+                  In two years, we&apos;ve produced five national medalists and two African Championship qualifiers. Each medal reflects our commitment to unlocking your potential. Your podium awaits—step up and claim it with Agroterra.
                 </p>
               </div>
             </motion.div>
@@ -551,7 +552,7 @@ export default function Athletics() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ delay: 0.4 }}
+              transition={{ delay: 0.3 }}
               className="flex flex-col md:flex-row items-center gap-8"
             >
               <div className="w-full md:w-1/2">
@@ -567,7 +568,7 @@ export default function Athletics() {
                 <FaRunning className="text-emerald-400 text-4xl mb-4" />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? 'text-emerald-100' : 'text-emerald-500'}`}>Agroterra Invitational 2025</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  On August 15, 2025, our Invitational Meet drew 200+ elite athletes, showcasing our world-class facilities. This wasn’t just an event—it was a launchpad for careers. Compete here and let your journey to global stardom begin.
+                  On August 15, 2025, our Invitational Meet drew 200+ elite athletes, showcasing our world-class facilities. This wasn&apos;t just an event—it was a launchpad for careers. Compete here and let your journey to global stardom begin.
                 </p>
               </div>
             </motion.div>
@@ -576,7 +577,7 @@ export default function Athletics() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
             className="mt-12 text-center text-lg sm:text-xl text-emerald-400"
           >
             Our victories are just the beginning. Join Agroterra and make your mark on history!
@@ -604,7 +605,7 @@ export default function Athletics() {
             transition={{ delay: 0.2 }}
             className={`text-lg sm:text-xl text-center mb-12 max-w-3xl mx-auto ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}
           >
-            Every moment at Agroterra captures the thrill of ambition, the sweat of dedication, and the joy of triumph. Our gallery showcases the energy of athletes chasing their dreams. This isn’t just a training ground—it’s where legends are born. See yourself in this story?
+            Every moment at Agroterra captures the thrill of ambition, the sweat of dedication, and the joy of triumph. Our gallery showcases the energy of athletes chasing their dreams. This isn&apos;t just a training ground—it&apos;s where legends are born. See yourself in this story?
           </motion.p>
           <Swiper
             modules={[Pagination, Navigation, Autoplay]}
@@ -647,7 +648,7 @@ export default function Athletics() {
             viewport={{ once: true }}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 text-emerald-500"
           >
-            Your Destiny Awaits in Lagos
+            Your Destiny Awaits in Ogun State
           </motion.h2>
           <motion.p
             variants={sectionVariants}
@@ -657,24 +658,24 @@ export default function Athletics() {
             transition={{ delay: 0.2 }}
             className={`text-lg sm:text-xl mb-10 ${toggleTheme ? "text-slate-300" : "text-slate-500"} max-w-3xl mx-auto`}
           >
-            As of August 24, 2025, Agroterra Sport Academy in Lekki, Lagos, is the epicenter of athletic excellence. Mentored by Olympic icons, empowered by world-class facilities, and fueled by a community of champions, this is where dreams become reality. From national titles to global podiums, your journey to stardom starts here. Don’t wait—seize this chance to become unstoppable and leave your mark on the world.
+            As of August 24, 2025, Agroterra Sport Academy in Joga-Orile, Ogun State, is the epicenter of athletic excellence. Mentored by Olympic icons, empowered by world-class facilities, and fueled by a community of champions, this is where dreams become reality. From national titles to global podiums, your journey to stardom starts here. Don&apos;t wait—seize this chance to become unstoppable and leave your mark on the world.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className="flex justify-center items-center gap-4 mb-10"
           >
             <FaMapMarkerAlt className="text-emerald-400 text-3xl" />
-            <span className={`text-lg sm:text-xl ${toggleTheme ? 'text-emerald-100' : 'text-emerald-400'}`}>Agroterra Sport Academy, Lekki, Lagos</span>
+            <span className={`text-lg sm:text-xl ${toggleTheme ? 'text-emerald-100' : 'text-emerald-400'}`}>Agroterra Sport Academy, Joga-Orile, Ogun State</span>
           </motion.div>
           <motion.div
             variants={sectionVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ delay: 0.6 }}
+            transition={{ delay: 0.4 }}
             className="flex justify-center gap-6 mb-10"
           >
             <a href="https://facebook.com/agroterra" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:text-emerald-300 text-3xl transition-colors"><FaFacebook /></a>
@@ -686,7 +687,7 @@ export default function Athletics() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
           >
             <Link
               href="/contact"
@@ -795,5 +796,5 @@ export default function Athletics() {
 // Animation variants
 const sectionVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
 };

@@ -24,6 +24,9 @@ import { useTheme } from './context/ThemeContext'
 export default function Home() {
   const { toggleTheme } = useTheme();
   const [currentSlide, setCurrentSlide] = useState(0)
+  const redirect = (url: string) => {
+    window.location.href = url;
+  }
 
   const containerRef = useRef(null)
   // const { scrollYProgress } = useScroll({
@@ -43,7 +46,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length)
-    }, 5000)
+    }, 3500)
     return () => clearInterval(timer)
   }, [slides.length])
 
@@ -72,11 +75,11 @@ export default function Home() {
 
   const events = [
     { 
-      title: '5-WEEK INTENSIVE SUMMER CAMP', 
+      title: 'INTENSIVE SUMMER CAMP', 
       date: '21st July - 22nd August', 
-      desc: 'Train Like A Pro - This summer, give your child the opportunity to train like a pro at the Lagos Tigers Academy Summer Soccer Camp.',
+      desc: 'Train Like A Pro - This summer, give your child the opportunity to train like a pro at the Agroterra Sports Academy.',
       duration: '5',
-      durationLabel: 'Weeks Intensive Summer Soccer Camp',
+      durationLabel: 'Agroterra Sports Academy',
       venue: 'Greenfield Stadium, Plot 123 Agodele Odubiyi Lekki',
       time: '10:00am to 1:00pm Daily',
       discount: '5% OFF EARLY BIRD',
@@ -195,7 +198,7 @@ export default function Home() {
     },
     {
       title: 'Natural Training Fields',
-      desc: 'Premium natural grass fields perfect for football, rugby, and outdoor team sports with professional drainage.',
+      desc: 'Premium natural grass fields perfect for football, table tennis, and outdoor team sports with professional drainage.',
       image: bgImage5,
       category: 'OUTDOOR',
       icon: <FaRunning />,
@@ -229,7 +232,7 @@ export default function Home() {
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -100 }}
-            transition={{ duration: 0.8, ease: 'easeInOut' }}
+            transition={{ duration: 0.6, ease: 'easeInOut' }}
             className="absolute inset-0"
           >
             <Image
@@ -248,7 +251,7 @@ export default function Home() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-emerald-500 to-green-500 text-transparent bg-clip-text"
           >
             {slides[currentSlide].title}
@@ -320,7 +323,7 @@ export default function Home() {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.4 }}
             viewport={{ once: true }}
             className="text-3xl sm:text-4xl font-bold text-center mb-4 text-emerald-500"
           >
@@ -329,7 +332,7 @@ export default function Home() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             viewport={{ once: true }}
             className="text-lg text-center mb-12 text-slate-600 max-w-2xl mx-auto"
           >
@@ -348,7 +351,7 @@ export default function Home() {
                   className="min-w-[400px] h-[280px] rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105 snap-center bg-gradient-to-r from-emerald-500 to-green-500 shadow-2xl"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
                   <div className="flex h-full">
@@ -364,7 +367,7 @@ export default function Home() {
                           {event.desc}
                         </p>
                         <div className="text-xs opacity-75 mb-4">
-                          <div>{event.venue}</div>
+                          {/* <div>{event.venue}</div> */}
                           <div>{event.time}</div>
                         </div>
                       </div>
@@ -399,7 +402,7 @@ export default function Home() {
                       className="h-full bg-white"
                       initial={{ width: '0%' }}
                       whileInView={{ width: `${calculateProgress(event.date)}%` }}
-                      transition={{ duration: 1.5, delay: index * 0.2 }}
+                      transition={{ duration: 1.0, delay: index * 0.2 }}
                       viewport={{ once: true }}
                     />
                   </div>
@@ -434,12 +437,12 @@ export default function Home() {
         <div className="flex flex-col w-full md:w-[42rem] justify-between">
           <div className="block space-y-3">
             <h4 className="text-emerald-500">22nd July - 23rd August</h4>
-            <h2 className="uppercase text-3xl">5 week intensive summer camp</h2>
+            <h2 className="uppercase text-3xl">intensive summer camp</h2>
             <div className="h-0.5 w-[100px] bg-emerald-500"></div>
           </div>
           <h3 className="text-xl font-semibold mt-4">Think like a pro</h3>
           <div className="block text-base text-wrap text-[17px] mt-2">
-            This summer, give your child the opportunity to train like a pro at the Lagos Tigers Academy Summer Soccer Camp – a fun, structured, and skill-packed experience for boys and girls aged 3 to 15. Whether your child is a beginner or already showing showing promise, our 5-week camp combines professional football training, life skill development, and matchday excitement – all in a safe, inclusive environment.
+            This summer, give your child the opportunity to train like a pro at the Agroterra Sports Academy – a fun, structured, and skill-packed experience for boys and girls aged 3 to 15. Whether your child is a beginner or already showing showing promise, our camp combines professional football, basketball, tennis, table tennis and golf training, life skill development, and matchday excitement – all in a safe, inclusive environment.
           </div>
           <button className="border uppercase py-4 cursor-pointer hover:text-white border-emerald-500 text-emerald-500 hover:bg-emerald-500 mt-4">
             Contact Us
@@ -457,7 +460,7 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, ease: "easeOut" }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
               viewport={{ once: true }}
               className="text-center mb-8"
             >
@@ -465,7 +468,7 @@ export default function Home() {
                 className="inline-block"
                 initial={{ scale: 0.8, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
               >
                 <span className="inline-block px-6 py-2 rounded-full text-xs font-bold tracking-wide uppercase mb-6 bg-gradient-to-r from-emerald-500/20 to-green-500/20 text-emerald-500 border border-emerald-500/30">
@@ -482,7 +485,7 @@ export default function Home() {
                 className="w-24 h-1 mx-auto mt-8 rounded-full bg-gradient-to-r from-emerald-500 to-green-500"
                 initial={{ width: 0 }}
                 whileInView={{ width: 96 }}
-                transition={{ duration: 1, delay: 0.5 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
                 viewport={{ once: true }}
               />
             </motion.div>
@@ -493,7 +496,7 @@ export default function Home() {
                   key={program.id}
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.2 }}
+                  transition={{ duration: 0.4, delay: index * 0.2 }}
                   viewport={{ once: true }}
                   className={`group relative overflow-hidden rounded-2xl ${!toggleTheme ? "bg-gradient-to-br from-white to-gray-50":""} shadow-lg border border-emerald-200/50 hover:shadow-xl transition-all duration-500 hover:-translate-y-2`}
                 >
@@ -572,9 +575,10 @@ export default function Home() {
                         </div>
                       </div>
                       <motion.button
-                        className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm mt-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white shadow-md hover:shadow-lg group/btn"
+                        className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm mt-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white shadow-md cursor-pointer hover:shadow-lg group/btn"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
+                        onClick={() => redirect('/contact')}
                       >
                         <span>Enroll Now</span>
                         <FaChevronRight className="transform group-hover/btn:translate-x-1 transition-transform duration-300" />
@@ -627,7 +631,7 @@ export default function Home() {
                 className="w-32 h-1 mx-auto mt-6 rounded-full bg-gradient-to-r from-emerald-500 to-green-500"
                 initial={{ width: 0 }}
                 whileInView={{ width: 128 }}
-                transition={{ duration: 1, delay: 0.5 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true }}
               />
             </motion.div>
@@ -638,7 +642,7 @@ export default function Home() {
                   key={index}
                   initial={{ opacity: 0, y: 50, scale: 0.95 }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  transition={{ duration: 0.8, delay: index * 0.2 }}
+                  transition={{ duration: 0.6, delay: index * 0.2 }}
                   viewport={{ once: true }}
                   className={`group relative rounded-3xl overflow-hidden ${!toggleTheme ? "bg-white/80": "bg-slate-900"} backdrop-blur-lg shadow-2xl border border-emerald-500/20 hover:shadow-emerald-500/30 transition-all duration-500 hover:-translate-y-3`}
                 >

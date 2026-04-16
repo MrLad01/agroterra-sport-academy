@@ -23,9 +23,9 @@ export default function Football() {
   const [currentVideo, setCurrentVideo] = useState(0);
 
   const videos = [
-    '/videos/fball-1-1.mp4',
-    '/videos/fball-2-1.mp4',
-    '/videos/pitch-1-1.mp4'
+    'https://res.cloudinary.com/do7woqgon/video/upload/v1771680957/fball-1-1_zdemn1.mp4',
+    'https://res.cloudinary.com/do7woqgon/video/upload/v1771681501/fball-2-1_x5rwoc.mp4',
+    'https://res.cloudinary.com/do7woqgon/video/upload/v1771681579/pitch-1-1_dpd5x7.mp4'
   ];
   const handleVideoEnd = () => {
     setCurrentVideo((prev) => (prev + 1) % videos.length);
@@ -43,7 +43,7 @@ export default function Football() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 0.5, ease: "easeInOut", delay: 0.2 }}
             autoPlay
             muted
             playsInline
@@ -60,7 +60,7 @@ export default function Football() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-xl sm:text-3xl lg:text-4xl font-bold mb-6 bg-gradient-to-r from-emerald-500 to-green-500 text-transparent bg-clip-text leading-tight"
           >
             Kick Off Your Legacy: Agroterra Football
@@ -68,7 +68,7 @@ export default function Football() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="text-sm sm:text-base lg:text-lg mb-10 text-gray-200 leading-relaxed max-w-3xl mx-auto"
           >
             Dream of dazzling crowds with your footwork, scoring match-winning goals, and earning global scouts&apos; attention? At Agroterra, we transform raw talent into football stardom with elite coaching, top-tier facilities, and scouting programs that open doors to professional clubs. Your journey to the pitch of greatness starts now—are you ready?
@@ -76,7 +76,7 @@ export default function Football() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
           >
             <Link
               href="/contact"
@@ -108,7 +108,7 @@ export default function Football() {
             transition={{ delay: 0.2 }}
             className={`text-lg sm:text-xl text-center mb-12 max-w-3xl mx-auto ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}
           >
-            Our coaches are former pros and tactical masterminds who’ve played on global stages and now dedicate their expertise to crafting your football career. With personalized training, strategic insight, and a passion for unlocking your potential, they’ll prepare you for the spotlight of professional football.
+            Our coaches are former pros and tactical masterminds who&apos;ve played on global stages and now dedicate their expertise to crafting your football career. With personalized training, strategic insight, and a passion for unlocking your potential, they&apos;ll prepare you for the spotlight of professional football.
           </motion.p>
           <Swiper
             modules={[Pagination, Navigation, Autoplay]}
@@ -117,7 +117,7 @@ export default function Football() {
             breakpoints={{
               640: { slidesPerView: 2 },
             }}
-            autoplay={{ delay: 4000, disableOnInteraction: false }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
             className="mb-12"
           >
             <SwiperSlide>
@@ -161,7 +161,7 @@ export default function Football() {
                 />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? "text-emerald-100" : "text-emerald-500"}`}>Emeka Ude - Defense Coach</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  A rock-solid center-back in his playing days, Emeka’s coaching builds impenetrable defenses. &quot;Own the backline, own the game,&quot; he preaches, teaching tactical positioning and resilience to shut down any attack and impress recruiters.
+                  A rock-solid center-back in his playing days, Emeka&apos;s coaching builds impenetrable defenses. &quot;Own the backline, own the game,&quot; he preaches, teaching tactical positioning and resilience to shut down any attack and impress recruiters.
                 </p>
               </div>
             </SwiperSlide>
@@ -185,10 +185,10 @@ export default function Football() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             className="text-center text-lg sm:text-xl text-emerald-400"
           >
-            These coaches don’t just train—they build careers. Ready to kick your dreams into high gear?
+            These coaches don&apos;t just train—they build careers. Ready to kick your dreams into high gear?
           </motion.p>
         </div>
       </section>
@@ -226,6 +226,7 @@ export default function Football() {
               <div className="w-full md:w-1/2">
                 <video
                   autoPlay
+                  src={`https://res.cloudinary.com/do7woqgon/video/upload/v1771681579/pitch-1-1_dpd5x7.mp4`}
                   loop
                   muted
                   playsInline
@@ -233,16 +234,16 @@ export default function Football() {
                   height={300}
                   poster="/Screenshot 2025-09-06 154256.png"
                   className="object-cover object-center brightness-100 rounded-xl shadow-lg"
-                >
-                  <source src="/videos/pitch-1-1.mp4" type="video/mp4" />
-                </video>
+                />
+                  {/* <source src="/videos/pitch-1-1.mp4" type="video/mp4" /> */}
+              
 
               </div>
               <div className="w-full md:w-1/2">
                 <FaRunning className="text-emerald-400 text-4xl mb-4" />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? "text-emerald-100" : "text-emerald-500"}`}>FIFA-Standard Pitch</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  Launched August 10, 2024, our FIFA-standard pitch features top-tier turf, advanced drainage, and professional lighting. It’s where you’ll perfect your passes, sharpen your shots, and showcase your skills in scouting matches that attract top clubs.
+                  Launched August 10, 2024, our FIFA-standard pitch features top-tier turf, advanced drainage, and professional lighting. It&apos;s where you&apos;ll perfect your passes, sharpen your shots, and showcase your skills in scouting matches that attract top clubs.
                 </p>
               </div>
             </motion.div>
@@ -267,7 +268,7 @@ export default function Football() {
                 <FaUsers className="text-emerald-400 text-4xl mb-4" />
                 <h3 className={`text-2xl font-bold mb-3 ${toggleTheme ? "text-emerald-100" : "text-emerald-500"}`}>Elite Training Complex</h3>
                 <p className={`text-base ${toggleTheme ? "text-slate-300" : "text-slate-500"}`}>
-                  Revamped March 2025, our training complex includes strength gyms, tactical analysis rooms, and agility zones. Equipped with cutting-edge tech, it’s where you’ll build the stamina, strategy, and skills to stand out in professional trials.
+                  Revamped March 2025, our training complex includes strength gyms, tactical analysis rooms, and agility zones. Equipped with cutting-edge tech, it&apos;s where you&apos;ll build the stamina, strategy, and skills to stand out in professional trials.
                 </p>
               </div>
             </motion.div>
@@ -424,7 +425,7 @@ export default function Football() {
                 poster="/Screenshot 2025-09-06 154256.png"
                 className="object-cover object-center brightness-100 rounded-xl shadow-lg"
               >
-                <source src="/videos/Rapheal.mp4" type="video/mp4" />
+                <source src="https://res.cloudinary.com/do7woqgon/video/upload/v1771682435/Rapheal_o8nwdu.mp4" type="video/mp4" />
               </video>
             </SwiperSlide>
           </Swiper>
@@ -450,7 +451,7 @@ export default function Football() {
             viewport={{ once: true }}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 text-emerald-500"
           >
-            Your Football Destiny Awaits in Lagos
+            Your Football Destiny Awaits in Ogun
           </motion.h2>
           <motion.p
             variants={sectionVariants}
@@ -460,7 +461,7 @@ export default function Football() {
             transition={{ delay: 0.2 }}
             className={`text-lg sm:text-xl mb-10 ${toggleTheme ? "text-slate-300" : "text-slate-500"} max-w-3xl mx-auto`}
           >
-            As of August 24, 2025, Agroterra Sport Academy in Lekki, Lagos, is the ultimate hub for aspiring footballers. With world-class coaches, cutting-edge facilities, and scouting programs that connect you to top clubs, this is where your professional career takes flight. Don’t just dream of the big leagues—join us and make it happen.
+            As of August 24, 2025, Agroterra Sport Academy in Joga-Orile, Ogun State is the ultimate hub for aspiring footballers. With world-class coaches, cutting-edge facilities, and scouting programs that connect you to top clubs, this is where your professional career takes flight. Don&apos;t just dream of the big leagues—join us and make it happen.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -470,7 +471,7 @@ export default function Football() {
             className="flex justify-center items-center gap-4 mb-10"
           >
             <FaMapMarkerAlt className="text-emerald-400 text-3xl" />
-            <span className={`text-lg sm:text-xl ${toggleTheme ? "text-emerald-100" : "text-emerald-400"}`}>Agroterra Sport Academy, Lekki, Lagos</span>
+            <span className={`text-lg sm:text-xl ${toggleTheme ? "text-emerald-100" : "text-emerald-400"}`}>Agroterra Sport Academy, Joga-Orile, Ogun State</span>
           </motion.div>
           <motion.div
             variants={sectionVariants}
