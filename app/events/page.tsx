@@ -48,6 +48,7 @@ export default function Events() {
 
   const pastEvents = [
     {
+      slug: "wamufat-foundation",
       title: "WamuFat foundation Program, Annual Athletics Program",
       date: "July 21 - August 22, 2025",
       desc: "Our 2025 summer camp was a huge success, with over 200 young athletes trained by professional coaches.",
@@ -55,6 +56,7 @@ export default function Events() {
       image: bgImage,
     },
     {
+      slug: "lagos-marathon",
       title: "2025 Lagos Marathon",
       date: "February 15, 2025",
       desc: "Hosted a thrilling marathon with thousands of participants from across Nigeria.",
@@ -62,6 +64,7 @@ export default function Events() {
       image: bgImage,
     },
     {
+      slug: "basketball-tournament",
       title: "2024 Basketball Tournament",
       date: "December 10-15, 2024",
       desc: "A competitive tournament showcasing top basketball talent in the region.",
@@ -303,7 +306,7 @@ export default function Events() {
                     {event.desc}
                   </p>
                   <Link
-                    href="/events/recaps"
+                    href={`/events/recaps/${event.slug}`}
                     className="inline-flex items-center gap-2 text-emerald-500 font-semibold text-sm hover:text-emerald-400 transition-colors duration-300"
                   >
                     View Recap <FaChevronRight className="text-xs" />

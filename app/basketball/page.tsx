@@ -7,9 +7,9 @@ import { useTheme } from "../context/ThemeContext";
 import { FaTrophy, FaUsers, FaRunning, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+// import "swiper/css";
+// import "swiper/css/pagination";
+// import "swiper/css/navigation";
 import fac from "../../public/Screenshot 2025-09-06 161621.png"
 import gym from "../../public/Screenshot 2025-09-06 161027.png"
 import gym1 from "../../public/Gym1.jpg"
