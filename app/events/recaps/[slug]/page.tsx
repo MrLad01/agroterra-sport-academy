@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useParams } from "next/navigation";
 import {
@@ -9,6 +10,15 @@ import {
   FaTwitter, FaInstagram, FaLink,
 } from "react-icons/fa";
 import { useTheme } from "../../../context/ThemeContext";
+import wamufat from "@/public/wamufat.jpg"
+import wamufat1 from "@/public/wamufat1.jpg"
+import wamufat2 from "@/public/wamufat2.jpg"
+import wamufat3 from "@/public/wamufat3.jpg"
+import basketb from "@/public/basketb.jpg"
+import basketb1 from "@/public/basketb1.jpg"
+import basketb2 from "@/public/basketb2.jpg"
+import marathon from "@/public/marathon.jpg"
+import marathon2 from "@/public/marathon1.jpg"
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Data
@@ -23,7 +33,7 @@ const recapsData: Record<string, RecapData> = {
     heroGradient: "linear-gradient(135deg,#0a7c4e 0%,#065535 40%,#1a2e23 100%)",
     statsBarBg: "#065535",
     title: ["WamuFat Foundation", "Annual Athletics", "Program"],
-    titleEm: [1],          // which word indices are gold
+    titleEm: [1],
     meta: [
       { icon: "calendar", text: "July 21 – August 22, 2025" },
       { icon: "pin",      text: "Agroterra Sport Academy, Nigeria" },
@@ -86,7 +96,7 @@ const recapsData: Record<string, RecapData> = {
       upcomingDesc:  "Early registration now open. Secure your spot for next year's programme.",
       upcomingCta:   "Register Interest",
     },
-    galleryEmojis: ["📸", "🏅", "🤸", "⚽"],
+    galleryImages: [wamufat, wamufat1, wamufat2, wamufat3],
     galleryNote: "Full photo album on Instagram & Facebook. Tag us @AgroterraAcademy.",
   },
 
@@ -167,7 +177,7 @@ const recapsData: Record<string, RecapData> = {
       upcomingDesc:  "Train with Agroterra Academy's certified marathon programme and be ready for 2026.",
       upcomingCta:   "Enquire About Training",
     },
-    galleryEmojis: ["🏃", "🏅", "🌆", "🎊"],
+    galleryImages: [marathon, marathon2],
     galleryNote: "Official race photos at lagosmarathon.ng/gallery2025. Tag us @AgroterraAcademy.",
   },
 
@@ -247,7 +257,7 @@ const recapsData: Record<string, RecapData> = {
       upcomingDesc:  "Team registrations open Q3 2025. Will your club compete?",
       upcomingCta:   "Register Your Team",
     },
-    galleryEmojis: ["🏀", "🏆", "📸", "🎉"],
+    galleryImages: [basketb2, basketb1, basketb],
     galleryNote: "Full gallery on our website and social media. Tag @AgroterraAcademy.",
   },
 };
@@ -273,7 +283,8 @@ interface RecapData {
     awards: AwardItem[];
     upcomingLabel: string; upcomingTitle: string; upcomingDesc: string; upcomingCta: string;
   };
-  galleryEmojis: string[]; galleryNote: string;
+  galleryImages: any[];
+  galleryNote: string;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -503,7 +514,7 @@ export default function RecapDetail() {
             )}
           </div>
 
-          {/* Gallery */}
+          {/* ── GALLERY ── */}
           <div className="mb-12">
             <p className="text-[10px] font-bold tracking-[3px] uppercase text-emerald-500 mb-3 flex items-center gap-3 after:flex-1 after:h-px after:bg-gray-200">
               Photo Gallery
@@ -512,14 +523,26 @@ export default function RecapDetail() {
               style={{ fontFamily: "'DM Serif Display', serif", lineHeight: 1.2 }}>
               Moments from the Event
             </h2>
+
             <div className="grid grid-cols-3 gap-3">
-              {recap.galleryEmojis.map((emoji, i) => (
-                <div key={i}
-                  className={`rounded-xl flex items-center justify-center text-4xl aspect-[4/3] ${i === 0 ? "col-span-3 aspect-[16/7] text-5xl" : ""} ${toggleTheme ? "bg-slate-700" : "bg-emerald-50"}`}>
-                  {emoji}
+              {recap.galleryImages.map((img, i) => (
+                <div
+                  key={i}
+                  className={`relative rounded-xl overflow-hidden ${
+                    i === 0 ? "col-span-3 aspect-[16/7]" : "aspect-[4/3]"
+                  }`}
+                >
+                  <Image
+                    src={img}
+                    alt={`${recap.title.join(" ")} — gallery photo ${i + 1}`}
+                    fill
+                    className="object-cover hover:scale-105 transition-transform duration-500"
+                    sizes={i === 0 ? "100vw" : "33vw"}
+                  />
                 </div>
               ))}
             </div>
+
             <p className={`mt-4 text-[13px] italic ${textMuted}`}>{recap.galleryNote}</p>
           </div>
 

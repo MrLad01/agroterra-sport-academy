@@ -7,6 +7,9 @@ import { useRef } from "react"; // Removed useState since it's managed by ThemeC
 import { FaArrowLeft, FaArrowRight, FaCalendarAlt, FaClock, FaMapMarkerAlt, FaChevronRight } from "react-icons/fa";
 import bgImage from "@/public/event.png";
 import { useTheme } from "../context/ThemeContext"; // Import the context hook
+import wamufat from "@/public/wamufat.jpg"
+import basketb2 from "@/public/basketb2.jpg"
+import marathon2 from "@/public/marathon1.jpg"
 
 export default function Events() {
   const carouselRef = useRef<HTMLDivElement>(null);
@@ -53,7 +56,7 @@ export default function Events() {
       date: "July 21 - August 22, 2025",
       desc: "Our 2025 summer camp was a huge success, with over 200 young athletes trained by professional coaches.",
       highlight: "Awarded Best Youth Program 2025",
-      image: bgImage,
+      image: wamufat,
     },
     {
       slug: "lagos-marathon",
@@ -61,7 +64,7 @@ export default function Events() {
       date: "February 15, 2025",
       desc: "Hosted a thrilling marathon with thousands of participants from across Nigeria.",
       highlight: "Record-breaking participation",
-      image: bgImage,
+      image: marathon2,
     },
     {
       slug: "basketball-tournament",
@@ -69,7 +72,7 @@ export default function Events() {
       date: "December 10-15, 2024",
       desc: "A competitive tournament showcasing top basketball talent in the region.",
       highlight: "Featured on national TV",
-      image: bgImage,
+      image: basketb2,
     },
   ];
 
