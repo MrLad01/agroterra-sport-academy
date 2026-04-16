@@ -1,11 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
-import { motion } from "framer-motion";
+import Image, { StaticImageData } from "next/image";
 import { useParams } from "next/navigation";
 import {
-  FaCalendarAlt, FaMapMarkerAlt, FaClock,
   FaArrowLeft, FaChevronRight, FaFacebook,
   FaTwitter, FaInstagram, FaLink,
 } from "react-icons/fa";
@@ -283,7 +281,7 @@ interface RecapData {
     awards: AwardItem[];
     upcomingLabel: string; upcomingTitle: string; upcomingDesc: string; upcomingCta: string;
   };
-  galleryImages: any[];
+  galleryImages: StaticImageData[];
   galleryNote: string;
 }
 
