@@ -634,7 +634,7 @@ export default function RecapDetail() {
 
       {/* ── FOOTER CTA ── */}
       <section className={`py-14 px-6 text-center ${toggleTheme ? "bg-slate-800" : "bg-gray-100"}`}>
-        <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-emerald-500">Don't Miss the Next Event</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-emerald-500">Donapos;t Miss the Next Event</h2>
         <p className={`text-base mb-7 max-w-xl mx-auto ${textMuted}`}>
           Register for an upcoming event and be part of the Agroterra Sport Academy experience.
         </p>
