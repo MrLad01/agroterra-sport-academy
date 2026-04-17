@@ -11,6 +11,7 @@ import dirImage1 from "@/public/Yomi.jpg"
 import dirImage2 from "@/public/Raji1.jpg"
 import headImage from "@/public/Coach Ojuola.jpg"
 import techImage from "@/public/Coach Lekan.jpg"
+import consultant from "@/public/odedeji.jpg"
 // import conImage from "@/public/"
 
 export default function About() {
@@ -23,7 +24,7 @@ export default function About() {
     { name: "Muiz Raji", role: "Director", bio: "With 20+ years in sports management, John founded Agroterra to nurture talent.", image: dirImage2 },
     { name: "Ojuola Oladiran Ayinde", role: "Head Coach (Athletics)", bio: "Track and Field Guru. Specialist in sprints and middle Distance events.", image: headImage },
     { name: "Olalekan Soetan", role: "Master tactician and special consultant", bio: "A wonderful Track and Field coach. Specialist in hurdles and jumps events.", image: techImage },
-    { name: "Babajide Odedeji", role: "Sport Consultant", bio: "Oversees operations for top-tier facilities." },
+    { name: "Babajide Odedeji", role: "Sport Consultant", bio: "Oversees operations for top-tier facilities.", image: consultant },
   ];
 
   // Animation variants
