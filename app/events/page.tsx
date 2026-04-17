@@ -3,19 +3,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useRef } from "react"; // Removed useState since it's managed by ThemeContext
+import { useRef } from "react";
 import { FaArrowLeft, FaArrowRight, FaCalendarAlt, FaClock, FaMapMarkerAlt, FaChevronRight } from "react-icons/fa";
 import bgImage from "@/public/event.png";
-import { useTheme } from "../context/ThemeContext"; // Import the context hook
+import { useTheme } from "../context/ThemeContext";
 import wamufat from "@/public/wamufat.jpg"
 import basketb2 from "@/public/basketb2.jpg"
 import marathon2 from "@/public/marathon1.jpg"
 
 export default function Events() {
   const carouselRef = useRef<HTMLDivElement>(null);
-  const { toggleTheme } = useTheme(); // Access the theme state from context
+  const { toggleTheme } = useTheme();
 
-  // Sample event data
   const upcomingEvents = [
     {
       title: "5-WEEK INTENSIVE SUMMER CAMP",
@@ -76,7 +75,6 @@ export default function Events() {
     },
   ];
 
-  // Carousel scroll functions
   const scrollLeft = () => {
     if (carouselRef.current) {
       carouselRef.current.scrollBy({ left: -320, behavior: "smooth" });
@@ -89,7 +87,6 @@ export default function Events() {
     }
   };
 
-  // Animation variants
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -199,18 +196,14 @@ export default function Events() {
                   </div>
                   <div className="p-6 flex flex-col justify-between">
                     <div>
-                      <h3 className={`text-xl font-bold mb-2 ${toggleTheme ? "text-emerald-100": "text-emerald-500"}`}>
+                      <h3 className={`text-xl font-bold mb-2 ${toggleTheme ? "text-emerald-100" : "text-emerald-500"}`}>
                         {event.title}
                       </h3>
-                      <div className={`flex items-center gap-2 text-sm ${toggleTheme ? "text-slate-300" : "text-slate-500"}  mb-2`}>
+                      <div className={`flex items-center gap-2 text-sm ${toggleTheme ? "text-slate-300" : "text-slate-500"} mb-2`}>
                         <FaCalendarAlt />
                         {event.date}
                       </div>
-                      {/* <div className={`flex items-center gap-2 text-sm ${toggleTheme ? "text-slate-300" : "text-slate-500"}  mb-2`}>
-                        <FaMapMarkerAlt />
-                        {event.venue}
-                      </div> */}
-                      <div className={`flex items-center gap-2 text-sm ${toggleTheme ? "text-slate-300" : "text-slate-500"}  mb-4`}>
+                      <div className={`flex items-center gap-2 text-sm ${toggleTheme ? "text-slate-300" : "text-slate-500"} mb-4`}>
                         <FaClock />
                         {event.time}
                       </div>
@@ -273,49 +266,52 @@ export default function Events() {
             Relive the highlights of our memorable past events.
           </motion.p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
             {pastEvents.map((event, index) => (
-              <motion.div
+              // ✅ Fix: block + h-full so all cards stretch equally in the grid
+              <Link
                 key={index}
-                variants={cardVariants}
-                initial="hidden"
-                whileInView="visible"
-                whileHover="hover"
-                viewport={{ once: true }}
-                className={`rounded-2xl overflow-hidden ${toggleTheme ? "bg-slate-800" : "bg-white"} shadow-lg border border-emerald-500/30`}
+                href={`/events/recaps/${event.slug}`}
+                className="block h-full"
               >
-                <div className="relative h-40">
-                  <Image
-                    src={event.image}
-                    alt={event.title}
-                    fill
-                    className="object-cover object-center"
-                    quality={80}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  <div className="absolute top-4 left-4 bg-emerald-500/90 px-3 py-1 rounded text-xs text-white font-bold">
-                    {event.highlight}
+                <motion.div
+                  variants={cardVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  whileHover="hover"
+                  viewport={{ once: true }}
+                  className={`h-full rounded-2xl overflow-hidden ${toggleTheme ? "bg-slate-800" : "bg-white"} shadow-lg border border-emerald-500/30`}
+                >
+                  <div className="relative h-40">
+                    <Image
+                      src={event.image}
+                      alt={event.title}
+                      fill
+                      className="object-cover object-center"
+                      quality={80}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute top-4 left-4 bg-emerald-500/90 px-3 py-1 rounded text-xs text-white font-bold">
+                      {event.highlight}
+                    </div>
                   </div>
-                </div>
-                <div className="p-6">
-                  <h3 className={`text-lg font-bold mb-2 ${toggleTheme ? "text-emerald-100": "text-emerald-500"}`}>
-                    {event.title}
-                  </h3>
-                  <div className={`flex items-center gap-2 text-sm ${toggleTheme ? "text-slate-300" : "text-slate-500"} mb-2`}>
-                    <FaCalendarAlt />
-                    {event.date}
+                  <div className="p-6">
+                    <h3 className={`text-lg font-bold mb-2 ${toggleTheme ? "text-emerald-100" : "text-emerald-500"}`}>
+                      {event.title}
+                    </h3>
+                    <div className={`flex items-center gap-2 text-sm ${toggleTheme ? "text-slate-300" : "text-slate-500"} mb-2`}>
+                      <FaCalendarAlt />
+                      {event.date}
+                    </div>
+                    <p className={`text-sm ${toggleTheme ? "text-slate-300" : "text-slate-500"} mb-4`}>
+                      {event.desc}
+                    </p>
+                    <span className="inline-flex items-center gap-2 text-emerald-500 font-semibold text-sm hover:text-emerald-400 transition-colors duration-300">
+                      View Recap <FaChevronRight className="text-xs" />
+                    </span>
                   </div>
-                  <p className={`text-sm ${toggleTheme ? "text-slate-300" : "text-slate-500"}  mb-4`}>
-                    {event.desc}
-                  </p>
-                  <Link
-                    href={`/events/recaps/${event.slug}`}
-                    className="inline-flex items-center gap-2 text-emerald-500 font-semibold text-sm hover:text-emerald-400 transition-colors duration-300"
-                  >
-                    View Recap <FaChevronRight className="text-xs" />
-                  </Link>
-                </div>
-              </motion.div>
+                </motion.div>
+              </Link>
             ))}
           </div>
         </div>
@@ -330,14 +326,14 @@ export default function Events() {
           viewport={{ once: true }}
           className="text-3xl sm:text-4xl font-bold mb-4 text-emerald-500"
         >
-          Don’t Miss Out!
+          Don&apos;t Miss Out!
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
-          className={`text-lg mb-8 ${toggleTheme ? "text-slate-300" : "text-slate-500"}  max-w-2xl mx-auto`}
+          className={`text-lg mb-8 ${toggleTheme ? "text-slate-300" : "text-slate-500"} max-w-2xl mx-auto`}
         >
           Register for our upcoming events and be part of the Agroterra Sport Academy experience.
         </motion.p>
