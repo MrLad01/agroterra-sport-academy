@@ -151,21 +151,21 @@ export default function Home() {
       icon: <FaStar className="text-xl" />,
       gradient: 'from-emerald-500 to-green-500'
     },
-    {
-      id: 3,
-      title: 'Ultimate Fitness Transformation',
-      subtitle: 'Complete Athletic Conditioning',
-      desc: 'Revolutionary fitness program combining strength training, endurance building, and athletic conditioning. Transform your body and performance with our science-backed approach.',
-      image: athImage3,
-      badge: 'ALL LEVELS',
-      duration: '3 Months',
-      level: 'All Levels',
-      students: '200+',
-      rating: 4.7,
-      features: ['HIIT Training', 'Strength Building', 'Body Transformation', 'Meal Plans'],
-      icon: <FaDumbbell className="text-xl" />,
-      gradient: 'from-emerald-500 to-green-500'
-    }
+    // {
+    //   id: 3,
+    //   title: 'Ultimate Fitness Transformation',
+    //   subtitle: 'Complete Athletic Conditioning',
+    //   desc: 'Revolutionary fitness program combining strength training, endurance building, and athletic conditioning. Transform your body and performance with our science-backed approach.',
+    //   image: athImage3,
+    //   badge: 'ALL LEVELS',
+    //   duration: '3 Months',
+    //   level: 'All Levels',
+    //   students: '200+',
+    //   rating: 4.7,
+    //   features: ['HIIT Training', 'Strength Building', 'Body Transformation', 'Meal Plans'],
+    //   icon: <FaDumbbell className="text-xl" />,
+    //   gradient: 'from-emerald-500 to-green-500'
+    // }
   ]
 
   const facilities = [
